@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>快速搭建Spring Boot项目及常用技术整合 | 一觉睡到小时候</title>
+  
+  
+  <meta name="description" content="三级代码，一级Bug！">
+  
+
+  
+  <link rel="alternate" href="/atom.xml" title="一觉睡到小时候">
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico">
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+<meta name="generator" content="Hexo 4.1.0"><link rel="alternate" href="/atom.xml" title="一觉睡到小时候" type="application/atom+xml">
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>一觉睡到小时候</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-home fa-fw'></i>&nbsp;首页
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/categories/"
+            
+              rel="nofollow"
+            
+            
+            id="categories">
+            <i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/tags/"
+            
+              rel="nofollow"
+            
+            
+            id="tags">
+            <i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/archives/"
+            
+              rel="nofollow"
+            
+            
+            id="archives">
+            <i class='fas fa-archive fa-fw'></i>&nbsp;归档
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/links/"
+            
+              rel="nofollow"
+            
+            
+            id="links">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          一觉睡到小时候
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;首页
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/links/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="links">
+									<i class='fas fa-link fa-fw'></i>&nbsp;友链
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/about/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="about">
+									<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-grin fa-fw'></i>&nbsp;首页
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                id="tags">
+								<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/links/"
+                
+                  rel="nofollow"
+                
+                
+                id="links">
+								<i class='fas fa-link fa-fw'></i>&nbsp;友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2020/01/01/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BASpring-Boot%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF%E6%95%B4%E5%90%88/">
+        快速搭建Spring Boot项目及常用技术整合
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://www.lida1024.top" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>少年闰土</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-01-01</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/Java/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>Java</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>4.5k字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>22分</p>
+      </a>
+    </div>
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1lZWEzZDRhYjIyOGVmNjIxLmpwZw?x-oss-process=image/format,png" alt=""></p>
+<a id="more"></a>
+<h3 id="Spring-Boot简介"><a href="#Spring-Boot简介" class="headerlink" title="Spring Boot简介"></a>Spring Boot简介</h3><p>Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。</p>
+<h3 id="Spring-Boot特点"><a href="#Spring-Boot特点" class="headerlink" title="Spring Boot特点"></a>Spring Boot特点</h3><ul>
+<li><p>创建独立的Spring应用程序</p>
+</li>
+<li><p>嵌入的Tomcat，无需部署WAR文件</p>
+</li>
+<li><p>简化Maven配置</p>
+</li>
+<li><p>自动配置Spring</p>
+</li>
+<li><p>提供生产就绪型功能，如指标，健康检查和外部配置</p>
+</li>
+<li><p>绝对没有代码生成并且对XML也没有配置要求</p>
+<h3 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h3><h4 id="1、访问http-start-spring-io-构建项目，也可在idea创建如下图："><a href="#1、访问http-start-spring-io-构建项目，也可在idea创建如下图：" class="headerlink" title="1、访问http://start.spring.io/构建项目，也可在idea创建如下图："></a>1、访问<a href="http://start.spring.io/构建项目，也可在idea创建如下图：" target="_blank" rel="noopener">http://start.spring.io/构建项目，也可在idea创建如下图：</a></h4><p><img src="https://img-blog.csdnimg.cn/20191218173310114.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0RldmlsbGkwMzEw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS05ZWMxNTkwMzg4MzE0ZWYxLnBuZw?x-oss-process=image/format,png" alt="step2.png"><br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0xN2RlNDY2YTU4Yjk1YWQyLnBuZw?x-oss-process=image/format,png" alt="step3.png"><br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1jNzQwYWIyYzFiMTE2ZGYzLnBuZw?x-oss-process=image/format,png" alt="step4.png"></p>
+<h4 id="2、-springboot默认生成三个文件"><a href="#2、-springboot默认生成三个文件" class="headerlink" title="2、 springboot默认生成三个文件"></a>2、 springboot默认生成三个文件</h4><h5 id="2-1-pom-xml"><a href="#2-1-pom-xml" class="headerlink" title="2.1 pom.xml"></a>2.1 pom.xml</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns&#x3D;&quot;http:&#x2F;&#x2F;maven.apache.org&#x2F;POM&#x2F;4.0.0&quot; xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;</span><br><span class="line">         xsi:schemaLocation&#x3D;&quot;http:&#x2F;&#x2F;maven.apache.org&#x2F;POM&#x2F;4.0.0 http:&#x2F;&#x2F;maven.apache.org&#x2F;xsd&#x2F;maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;&#x2F;modelVersion&gt;</span><br><span class="line">    &lt;parent&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-parent&lt;&#x2F;artifactId&gt;</span><br><span class="line">        &lt;version&gt;2.1.4.RELEASE&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;relativePath&#x2F;&gt; &lt;!-- lookup parent from repository --&gt;</span><br><span class="line">    &lt;&#x2F;parent&gt;</span><br><span class="line">    &lt;groupId&gt;com.example&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;demo&lt;&#x2F;artifactId&gt;</span><br><span class="line">    &lt;version&gt;0.0.1-SNAPSHOT&lt;&#x2F;version&gt;</span><br><span class="line">    &lt;name&gt;demo&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;description&gt;Demo project for Spring Boot&lt;&#x2F;description&gt;</span><br><span class="line"></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;java.version&gt;1.8&lt;&#x2F;java.version&gt;</span><br><span class="line">    &lt;&#x2F;properties&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-web&lt;&#x2F;artifactId&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-test&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;&#x2F;scope&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">    &lt;&#x2F;dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;&#x2F;plugin&gt;</span><br><span class="line">        &lt;&#x2F;plugins&gt;</span><br><span class="line">    &lt;&#x2F;build&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;project&gt;</span><br></pre></td></tr></table></figure>
+<p>重点就一个gav：spring-boot-starter-web，其他可以删除。</p>
+<h5 id="2-2-application-properties"><a href="#2-2-application-properties" class="headerlink" title="2.2 application.properties"></a>2.2 application.properties</h5><p>该文件默认为空，springboot的默认启动端口号：8080，可以在改文件修改。建议用yml的格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8080</span><br></pre></td></tr></table></figure>
+<h5 id="2-3-启动类文件"><a href="#2-3-启动类文件" class="headerlink" title="2.3 启动类文件"></a>2.3 启动类文件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class JxcApplication &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(JxcApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="2-4-验证springboot"><a href="#2-4-验证springboot" class="headerlink" title="2.4 验证springboot"></a>2.4 验证springboot</h5><p>在项目包路径下创建一个Controller，写一个<code>HelloController</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class HelloController &#123;</span><br><span class="line"></span><br><span class="line">    @RequestMapping(&quot;&#x2F;&quot;)</span><br><span class="line">    @ResponseBody</span><br><span class="line">    public String getHello() &#123;</span><br><span class="line">        return &quot;hello&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>浏览器查看效果<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1lMDhmZmU5ZDVjZWI5Nzg4LnBuZw?x-oss-process=image/format,png" alt="HelloController.png"></p>
+</li>
+</ul>
+<h3 id="完成项目"><a href="#完成项目" class="headerlink" title="完成项目"></a>完成项目</h3><h4 id="完整项目目录"><a href="#完整项目目录" class="headerlink" title="完整项目目录"></a>完整项目目录</h4><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1kZDM5ZWI1ZTRkOGU5ZjJjLnBuZw?x-oss-process=image/format,png" alt="project.png"></p>
+<h4 id="1、项目依赖"><a href="#1、项目依赖" class="headerlink" title="1、项目依赖"></a>1、项目依赖</h4><ul>
+<li>web <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;spring-boot-starter-web&lt;&#x2F;artifactId&gt;</span><br><span class="line">  &lt;&#x2F;dependency&gt;</span><br><span class="line"></span><br><span class="line">  &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.mybatis.spring.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;mybatis-spring-boot-starter&lt;&#x2F;artifactId&gt;</span><br><span class="line">      &lt;version&gt;2.1.0&lt;&#x2F;version&gt;</span><br><span class="line">  &lt;&#x2F;dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.aspectj&lt;&#x2F;groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;aspectjweaver&lt;&#x2F;artifactId&gt;</span><br><span class="line">      &lt;version&gt;$&#123;aspectjweaver.version&#125;&lt;&#x2F;version&gt;</span><br><span class="line">  &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>mysql<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;&#x2F;artifactId&gt;</span><br><span class="line">    &lt;version&gt;$&#123;mysql.version&#125;&lt;&#x2F;version&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>lombok(可选)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;org.projectlombok&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;lombok&lt;&#x2F;artifactId&gt;</span><br><span class="line">     &lt;optional&gt;true&lt;&#x2F;optional&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>pagehelper(可选)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.github.pagehelper&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;pagehelper-spring-boot-starter&lt;&#x2F;artifactId&gt;</span><br><span class="line">     &lt;version&gt;$&#123;pagehelper.version&#125;&lt;&#x2F;version&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>JWT(可选)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;io.jsonwebtoken&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;jjwt&lt;&#x2F;artifactId&gt;</span><br><span class="line">     &lt;version&gt;$&#123;jwt.version&#125;&lt;&#x2F;version&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>mybatis<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis-spring&lt;&#x2F;artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.0.2&lt;&#x2F;version&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>shiro<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;org.apache.shiro&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;shiro-spring&lt;&#x2F;artifactId&gt;</span><br><span class="line">     &lt;version&gt;1.4.0&lt;&#x2F;version&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>hutool(可选)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;cn.hutool&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;hutool-all&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;version&gt;5.0.7&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>druid<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.alibaba&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;druid-spring-boot-starter&lt;&#x2F;artifactId&gt;</span><br><span class="line">     &lt;version&gt;1.1.10&lt;&#x2F;version&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br><span class="line"></span><br><span class="line"> &lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.alibaba&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;druid&lt;&#x2F;artifactId&gt;</span><br><span class="line">     &lt;version&gt;1.1.10&lt;&#x2F;version&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>jdbc<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">           &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">           &lt;artifactId&gt;spring-boot-starter-jdbc&lt;&#x2F;artifactId&gt;</span><br><span class="line">       &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>fastjson<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;com.alibaba&lt;&#x2F;groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;fastjson&lt;&#x2F;artifactId&gt;</span><br><span class="line">      &lt;version&gt;$&#123;fastjson.version&#125;&lt;&#x2F;version&gt;</span><br><span class="line">  &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>tomcat<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;org.apache.tomcat.embed&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;tomcat-embed-core&lt;&#x2F;artifactId&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure>
+附上properties<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;properties&gt;</span><br><span class="line">        &lt;project.version&gt;1.0&lt;&#x2F;project.version&gt;</span><br><span class="line">        &lt;java.version&gt;1.8&lt;&#x2F;java.version&gt;</span><br><span class="line">        &lt;mysql.version&gt;5.1.25&lt;&#x2F;mysql.version&gt;</span><br><span class="line">        &lt;pagehelper.version&gt;1.2.12&lt;&#x2F;pagehelper.version&gt;</span><br><span class="line">        &lt;jwt.version&gt;0.9.1&lt;&#x2F;jwt.version&gt;</span><br><span class="line">        &lt;maven.compiler.source&gt;1.8&lt;&#x2F;maven.compiler.source&gt;</span><br><span class="line">        &lt;maven.compiler.target&gt;1.8&lt;&#x2F;maven.compiler.target&gt;</span><br><span class="line">        &lt;commons.lang.version&gt;3.9&lt;&#x2F;commons.lang.version&gt;</span><br><span class="line">        &lt;aspectjweaver.version&gt;1.9.4&lt;&#x2F;aspectjweaver.version&gt;</span><br><span class="line">        &lt;fastjson.version&gt;1.2.62&lt;&#x2F;fastjson.version&gt;</span><br><span class="line">    &lt;&#x2F;properties&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="2、配置文件"><a href="#2、配置文件" class="headerlink" title="2、配置文件"></a>2、配置文件</h4><h5 id="2-1修改application-properties为application-yml"><a href="#2-1修改application-properties为application-yml" class="headerlink" title="2.1修改application.properties为application.yml"></a>2.1修改<code>application.properties</code>为<code>application.yml</code></h5>配置端口，项目根路径，spring配置，mybatis配置，分页插件配置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">server:</span><br><span class="line">  port: 8100</span><br><span class="line">  servlet:</span><br><span class="line">    context-path: &#x2F;api</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">spring:</span><br><span class="line">  profiles:</span><br><span class="line">    active: dev</span><br><span class="line">  http:</span><br><span class="line">    encoding:</span><br><span class="line">      charset: UTF-8</span><br><span class="line">      force: true</span><br><span class="line">      enabled: true</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:&#x2F;mapper&#x2F;*.xml</span><br><span class="line">  type-aliases-package: com.example.jxc.domain.entity.*</span><br><span class="line">  configuration:</span><br><span class="line">    cache-enabled: true</span><br><span class="line">    lazy-loading-enabled: true</span><br><span class="line">    multiple-result-sets-enabled: true</span><br><span class="line">    use-column-label: true</span><br><span class="line">    call-setters-on-nulls: true</span><br><span class="line">    local-cache-scope: session</span><br><span class="line">    map-underscore-to-camel-case: true</span><br><span class="line">    default-executor-type: BATCH</span><br><span class="line">    auto-mapping-behavior: PARTIAL</span><br><span class="line"></span><br><span class="line">pagehelper:</span><br><span class="line">  helperDialect: mysql</span><br><span class="line">  reasonable: true</span><br><span class="line">  supportMethodsArguments: true</span><br><span class="line">  params: count&#x3D;countSql</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>mybatis中的configuration配置，这是 MyBatis 中极为重要的调整设置，它们会改变 MyBatis 的运行时行为。 下表描述了设置中各项的意图、默认值等。<br>| 设置名| 描述| 有效值|默认值|<br>|—–|—–|——|——|<br>| cacheEnabled | 全局地开启或关闭配置文件中的所有映射器已经配置的任何缓存。 |  true  false |true|<br>| lazyLoadingEnabled| 延迟加载的全局开关。当开启时，所有关联对象都会延迟加载。 特定关联关系中可通过设置 fetchType 属性来覆盖该项的开关状态。 |  true  false |false|<br>| aggressiveLazyLoading|      当开启时，任何方法的调用都会加载该对象的所有属性。 否则，每个属性会按需加载（参考 lazyLoadTriggerMethods)。 |  true  false |false （在 3.4.1 及之前的版本默认值为 true） |<br>| multipleResultSetsEnabled| 是否允许单一语句返回多结果集（需要驱动支持）。 |  true  false |true|<br>| useColumnLabel|      使用列标签代替列名。不同的驱动在这方面会有不同的表现，具体可参考相关驱动文档或通过测试这两种不同的模式来观察所用驱动的结果。  |  true  false |true|<br>| useGeneratedKeys| 允许 JDBC 支持自动生成主键，需要驱动支持。 如果设置为 true 则这个设置强制使用自动生成主键，尽管一些驱动不能支持但仍可正常工作（比如 Derby）。 |  true  false |false |<br>| autoMappingBehavior| 指定 MyBatis 应如何自动映射列到字段或属性。 NONE 表示取消自动映射；PARTIAL 只会自动映射没有定义嵌套结果集映射的结果集。 FULL 会自动映射任意复杂的结果集（无论是否嵌套）。 | NONE, PARTIAL, FULL  |PARTIAL|<br>| autoMappingUnknownColumnBehavior| 指定发现自动映射目标未知列（或者未知属性类型）的行为。NONE: 不做任何反应，WARNING: 输出提醒日志 (‘org.apache.ibatis.session.AutoMappingUnknownColumnBehavior’ 的日志等级必须设置为 WARN) ，FAILING: 映射失败 (抛出 SqlSessionException) |  NONE, WARNING, FAILING  |NONE|<br>| defaultExecutorType| 配置默认的执行器。SIMPLE 就是普通的执行器；REUSE 执行器会重用预处理语句（prepared statements）； BATCH 执行器将重用语句并执行批量更新。 |  SIMPLE REUSE BATCH  |SIMPLE|<br>| defaultStatementTimeout|      设置超时时间，它决定驱动等待数据库响应的秒数。  |  任意正整数 |未设置 (null) |<br>| defaultFetchSize|      为驱动的结果集获取数量（fetchSize）设置一个提示值。此参数只可以在查询设置中被覆盖。  |  任意正整数 |未设置 (null) |<br>| defaultResultSetType|      Specifies a scroll strategy when omit it per statement settings. (Since: 3.5.2)  |  FORWARD_ONLY SCROLL_SENSITIVE SCROLL_INSENSITIVE  DEFAULT(same behavior with ‘Not Set’)  |Not Set (null) |<br>| safeRowBoundsEnabled| 允许在嵌套语句中使用分页（RowBounds）。如果允许使用则设置为 false。  |  true  false |false |<br>| safeResultHandlerEnabled|允许在嵌套语句中使用分页（ResultHandler）。如果允许使用则设置为 false。 |  true  false |false |<br>| mapUnderscoreToCamelCase|是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN 到经典 Java 属性名 aColumn 的类似映射。 |  true  false |false |<br>| localCacheScope| MyBatis 利用本地缓存机制（Local Cache）防止循环引用（circular references）和加速重复嵌套查询。 默认值为 SESSION，这种情况下会缓存一个会话中执行的所有查询。 若设置值为 STATEMENT，本地会话仅用在语句执行上，对相同 SqlSession 的不同调用将不会共享数据。  |  SESSION  STATEMENT |SESSION  |<br>| jdbcTypeForNull| 当没有为参数提供特定的 JDBC 类型时，为空值指定 JDBC 类型。 某些驱动需要指定列的 JDBC 类型，多数情况直接用一般类型即可，比如 NULL、VARCHAR 或 OTHER。 |  JdbcType 常量，常用值：NULL, VARCHAR 或 OTHER。|OTHER|<br>| lazyLoadTriggerMethods| 指定哪个对象的方法触发一次延迟加载。 | 用逗号分隔的方法列表 |equals,clone,hashCode,toString |<br>| defaultScriptingLanguage| 指定动态 SQL 生成的默认语言。 | 一个类型别名或完全限定类名 |org.apache.ibatis.scripting.xmltags.XMLLanguageDriver |<br>| defaultEnumTypeHandler|指定 Enum 使用的默认 TypeHandler 。（新增于 3.4.5）  | 一个类型别名或完全限定类名 |org.apache.ibatis.type.EnumTypeHandler |<br>| callSettersOnNulls| 指定当结果集中值为 null 的时候是否调用映射对象的 setter（map 对象时为 put）方法，这在依赖于 Map.keySet() 或 null 值初始化的时候比较有用。注意基本类型（int、boolean 等）是不能设置成 null 的。 |  true  false |false |<br>| returnInstanceForEmptyRow| 当返回行的所有列都是空时，MyBatis默认返回 null。 当开启这个设置时，MyBatis会返回一个空实例。 请注意，它也适用于嵌套的结果集 （如集合或关联）。（新增于 3.4.2）  |  true  false |false |<br>| logPrefix| 指定 MyBatis 增加到日志名称的前缀。 |  任何字符串 |未设置|<br>| logImpl| 指定 MyBatis      指定 MyBatis 所用日志的具体实现，未指定时将自动查找。 |  SLF4J,LOG4J,LOG4J2,JDK_LOGGING,COMMONS_LOGGING,STDOUT_LOGGING,NO_LOGGING |未设置|<br>| proxyFactory|      指定 Mybatis 创建具有延迟加载能力的对象所用到的代理工具。 |       CGLIB ,JAVASSIST |AVASSIST （MyBatis 3.3 以上） |<br>| vfsImpl| 指定 VFS 的实现  |       自定义 VFS 的实现的类全限定名，以逗号分隔。 |未设置|<br>| useActualParamName| 允许使用方法签名中的名称作为语句参数名称。 为了使用该特性，你的项目必须采用 Java 8 编译，并且加上 -parameters 选项。（新增于 3.4.1）  |  true   false  |true|<br>| configurationFactory|      指定一个提供 Configuration 实例的类。 这个被返回的 Configuration 实例用来加载被反序列化对象的延迟加载属性值。 这个类必须包含一个签名为static Configuration getConfiguration() 的方法。（新增于 3.2.3）   |       类型别名或者全类名.  |未设置|</p>
+<h5 id="2-2-新建application-dev-yml"><a href="#2-2-新建application-dev-yml" class="headerlink" title="2.2 新建application-dev.yml"></a>2.2 新建<code>application-dev.yml</code></h5><p>配置数据库信息,通过<code>application.yml</code>中的active来启用dev配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">  profiles:</span><br><span class="line">    active: dev</span><br></pre></td></tr></table></figure>
+<p><code>application-dev.yml</code>完整配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    #   数据源基本配置</span><br><span class="line">    username: root</span><br><span class="line">    password:</span><br><span class="line">    driver-class-name: com.mysql.jdbc.Driver</span><br><span class="line">    url: jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;fhshgl</span><br><span class="line">    type: com.alibaba.druid.pool.DruidDataSource</span><br><span class="line">    #   数据源其他配置</span><br><span class="line">    initialSize: 5</span><br><span class="line">    minIdle: 5</span><br><span class="line">    maxActive: 20</span><br><span class="line">    maxWait: 60000</span><br><span class="line">    timeBetweenEvictionRunsMillis: 60000</span><br><span class="line">    minEvictableIdleTimeMillis: 300000</span><br><span class="line">    validationQuery: SELECT 1 FROM DUAL</span><br><span class="line">    testWhileIdle: true</span><br><span class="line">    testOnBorrow: false</span><br><span class="line">    testOnReturn: false</span><br><span class="line">    poolPreparedStatements: true</span><br><span class="line">    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，&#39;wall&#39;用于防火墙</span><br><span class="line">    filters: stat,wall</span><br><span class="line">    maxPoolPreparedStatementPerConnectionSize: 20</span><br><span class="line">    useGlobalDataSourceStat: true</span><br><span class="line">    connectionProperties: druid.stat.mergeSql&#x3D;true;druid.stat.slowSqlMillis&#x3D;500</span><br></pre></td></tr></table></figure>
+<h4 id="3、数据库连接池"><a href="#3、数据库连接池" class="headerlink" title="3、数据库连接池"></a>3、数据库连接池</h4><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS05Zjc5NGJmZjQ0ZDk3NjY4LnBuZw?x-oss-process=image/format,png" alt="图片.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">public class DruidConfig &#123;</span><br><span class="line"></span><br><span class="line">    @ConfigurationProperties(prefix &#x3D; &quot;spring.datasource&quot;)</span><br><span class="line">    @Bean</span><br><span class="line">    public DataSource druid()&#123;</span><br><span class="line">        return  new DruidDataSource();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 配置Druid的监控</span><br><span class="line">     * @return</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    public ServletRegistrationBean statViewServlet()&#123;</span><br><span class="line">        ServletRegistrationBean bean &#x3D; new ServletRegistrationBean(new StatViewServlet(), &quot;&#x2F;druid&#x2F;*&quot;);</span><br><span class="line">        Map&lt;String,String&gt; initParams &#x3D; new HashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        initParams.put(&quot;loginUsername&quot;,&quot;admin&quot;);</span><br><span class="line">        initParams.put(&quot;loginPassword&quot;,&quot;123456&quot;);</span><br><span class="line">        &#x2F;&#x2F;默认就是允许所有访问</span><br><span class="line">        initParams.put(&quot;allow&quot;,&quot;&quot;);</span><br><span class="line">        initParams.put(&quot;deny&quot;,&quot;192.168.15.21&quot;);</span><br><span class="line"></span><br><span class="line">        bean.setInitParameters(initParams);</span><br><span class="line">        return bean;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 配置一个web监控的filter</span><br><span class="line">     * @return</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    public FilterRegistrationBean webStatFilter()&#123;</span><br><span class="line">        FilterRegistrationBean bean &#x3D; new FilterRegistrationBean();</span><br><span class="line">        bean.setFilter(new WebStatFilter());</span><br><span class="line"></span><br><span class="line">        Map&lt;String,String&gt; initParams &#x3D; new HashMap&lt;&gt;();</span><br><span class="line">        initParams.put(&quot;exclusions&quot;,&quot;*.js,*.css,&#x2F;druid&#x2F;*&quot;);</span><br><span class="line"></span><br><span class="line">        bean.setInitParameters(initParams);</span><br><span class="line"></span><br><span class="line">        bean.setUrlPatterns(Arrays.asList(&quot;&#x2F;*&quot;));</span><br><span class="line"></span><br><span class="line">        return  bean;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="4、shiro"><a href="#4、shiro" class="headerlink" title="4、shiro"></a>4、shiro</h4><h5 id="4-1自定义realm"><a href="#4-1自定义realm" class="headerlink" title="4.1自定义realm"></a>4.1自定义realm</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0xMzlmZmVlNDViNzQxOWIzLnBuZw?x-oss-process=image/format,png" alt="realm.png"><br>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">public class MyRealm extends AuthorizingRealm&#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private UserService userService;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) &#123;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException &#123;</span><br><span class="line">        &#x2F;&#x2F;拿到封装好账户密码的token</span><br><span class="line">        UsernamePasswordToken token &#x3D; (UsernamePasswordToken) authenticationToken;</span><br><span class="line">        String userName &#x3D; token.getUsername();</span><br><span class="line">        &#x2F;&#x2F;用户校验</span><br><span class="line">        User user &#x3D; this.userService.getUser(userName);</span><br><span class="line">        if (user &#x3D;&#x3D; null) &#123;</span><br><span class="line">            throw new AuthenticationException(&quot;用户名或密码错误！&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F;加盐 计算盐值 保证每个加密后的 MD5 不一样</span><br><span class="line">        ByteSource credentialsSalt &#x3D; ByteSource.Util.bytes(user.getUsername());</span><br><span class="line">        SimpleAuthenticationInfo info &#x3D; new SimpleAuthenticationInfo(user, user.getPassword(), credentialsSalt,</span><br><span class="line">                this.getName());</span><br><span class="line">        return info;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="4-2shiro配置"><a href="#4-2shiro配置" class="headerlink" title="4.2shiro配置"></a>4.2shiro配置</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1kMmViZjdkM2UwOWExNzBlLnBuZw?x-oss-process=image/format,png" alt="图片.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">public class ShiroConfig &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 主要配置一些相应的URL的规则和访问权限</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    public ShiroFilterFactoryBean shiroFilter() &#123;</span><br><span class="line">        ShiroFilterFactoryBean shiroFilterFactoryBean &#x3D; new ShiroFilterFactoryBean();</span><br><span class="line">        shiroFilterFactoryBean.setSecurityManager(securityManager());</span><br><span class="line">        &#x2F;&#x2F;拦截器.</span><br><span class="line">        Map&lt;String, String&gt; filterChainDefinitionMap &#x3D; new LinkedHashMap&lt;String, String&gt;();</span><br><span class="line">        &#x2F;&#x2F;配置退出 过滤器,其中的具体的退出代码Shiro已经替我们实现了</span><br><span class="line">        filterChainDefinitionMap.put(&quot;&#x2F;system&#x2F;logout&quot;, &quot;anon&quot;);</span><br><span class="line">        &#x2F;&#x2F;过滤链定义，从上向下顺序执行，一般将&#x2F;**放在最为下边</span><br><span class="line">        &#x2F;&#x2F;authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问</span><br><span class="line">&#x2F;&#x2F;        filterChainDefinitionMap.put(&quot;&#x2F;static&#x2F;**&quot;, &quot;anon&quot;);</span><br><span class="line">        shiroFilterFactoryBean.setLoginUrl(&quot;&#x2F;system&#x2F;login&quot;);</span><br><span class="line">        filterChainDefinitionMap.put(&quot;&#x2F;**&quot;, &quot;authc&quot;);</span><br><span class="line">        shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);</span><br><span class="line">        return shiroFilterFactoryBean;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 注入 securityManager</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    public DefaultWebSecurityManager securityManager() &#123;</span><br><span class="line">        DefaultWebSecurityManager securityManager &#x3D; new DefaultWebSecurityManager();</span><br><span class="line">        &#x2F;&#x2F; 设置realm.</span><br><span class="line">        securityManager.setRealm(customRealm());</span><br><span class="line">        return securityManager;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 自定义身份认证 realm;</span><br><span class="line">     * &lt;p&gt;</span><br><span class="line">     * 必须写这个类，并加上 @Bean 注解，目的是注入 MyRealm，</span><br><span class="line">     * 否则会影响 MyRealm 中其他类的依赖注入</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    public MyRealm customRealm() &#123;</span><br><span class="line">        return new MyRealm();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 开启Shiro的注解(如@RequiresRoles,@RequiresPermissions),需借助SpringAOP扫描使用Shiro注解的类,并在必要时进行安全逻辑验证</span><br><span class="line">     * 配置以下两个bean(DefaultAdvisorAutoProxyCreator(可选)和AuthorizationAttributeSourceAdvisor)即可实现此功能</span><br><span class="line">     *</span><br><span class="line">     * @return</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    @DependsOn(&#123;&quot;lifecycleBeanPostProcessor&quot;&#125;)</span><br><span class="line">    public DefaultAdvisorAutoProxyCreator advisorAutoProxyCreator() &#123;</span><br><span class="line">        DefaultAdvisorAutoProxyCreator advisorAutoProxyCreator &#x3D; new DefaultAdvisorAutoProxyCreator();</span><br><span class="line">        advisorAutoProxyCreator.setProxyTargetClass(true);</span><br><span class="line">        return advisorAutoProxyCreator;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Bean</span><br><span class="line">    public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor() &#123;</span><br><span class="line">        AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor &#x3D; new AuthorizationAttributeSourceAdvisor();</span><br><span class="line">        authorizationAttributeSourceAdvisor.setSecurityManager(securityManager());</span><br><span class="line">        return authorizationAttributeSourceAdvisor;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * Shiro生命周期处理器 ---可以自定的来调用配置在 Spring IOC 容器中 shiro bean 的生命周期方法.</span><br><span class="line">     *</span><br><span class="line">     * @return</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Bean</span><br><span class="line">    public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() &#123;</span><br><span class="line">        return new LifecycleBeanPostProcessor();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="5、过滤器-跨域过滤"><a href="#5、过滤器-跨域过滤" class="headerlink" title="5、过滤器-跨域过滤"></a>5、过滤器-跨域过滤</h4><h5 id="5-1跨域过滤"><a href="#5-1跨域过滤" class="headerlink" title="5.1跨域过滤"></a>5.1跨域过滤</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS02ODEwMTBkMGZhZGEwYTcwLnBuZw?x-oss-process=image/format,png" alt="图片.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public class CostFilter implements Filter &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException &#123;</span><br><span class="line">        HttpServletRequest req &#x3D; (HttpServletRequest) request;</span><br><span class="line">        HttpServletResponse resp &#x3D; (HttpServletResponse) response;</span><br><span class="line">        String origin &#x3D; req.getHeader(&quot;Origin&quot;);</span><br><span class="line">        if (origin &#x3D;&#x3D; null) &#123;</span><br><span class="line">            origin &#x3D; req.getHeader(&quot;Referer&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F; 允许指定域访问跨域资源</span><br><span class="line">        resp.setHeader(&quot;Access-Control-Allow-Origin&quot;, origin);</span><br><span class="line">        &#x2F;&#x2F; 允许客户端携带跨域cookie，此时origin值不能为“*”，只能为指定单一域名</span><br><span class="line">        resp.setHeader(&quot;Access-Control-Allow-Credentials&quot;, &quot;true&quot;);</span><br><span class="line"></span><br><span class="line">        if (&quot;OPTIONS&quot;.equals(req.getMethod())) &#123;</span><br><span class="line">            String allowMethod &#x3D; req.getHeader(&quot;Access-Control-Request-Method&quot;);</span><br><span class="line">            String allowHeaders &#x3D; req.getHeader(&quot;Access-Control-Request-Headers&quot;);</span><br><span class="line">            &#x2F;&#x2F; 浏览器缓存预检请求结果时间,单位:秒</span><br><span class="line">            resp.setHeader(&quot;Access-Control-Max-Age&quot;, &quot;86400&quot;);</span><br><span class="line">            &#x2F;&#x2F; 允许浏览器在预检请求成功之后发送的实际请求方法名</span><br><span class="line">            resp.setHeader(&quot;Access-Control-Allow-Methods&quot;, allowMethod);</span><br><span class="line">            &#x2F;&#x2F; 允许浏览器发送的请求消息头</span><br><span class="line">            resp.setHeader(&quot;Access-Control-Allow-Headers&quot;, allowHeaders);</span><br><span class="line">            resp.setHeader(&quot;Content-Type&quot;, &quot;application&#x2F;json;charset&#x3D;utf-8&quot;);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        chain.doFilter(request, response);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="5-2-过滤器配置"><a href="#5-2-过滤器配置" class="headerlink" title="5.2 过滤器配置"></a>5.2 过滤器配置</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS02ZWU3NDQzY2JkMDg2MDVkLnBuZw?x-oss-process=image/format,png" alt="图片.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">public class FilterConfig &#123;</span><br><span class="line"></span><br><span class="line">    @Bean</span><br><span class="line">    public FilterRegistrationBean configureFilter()&#123;</span><br><span class="line">        FilterRegistrationBean bean &#x3D; new FilterRegistrationBean&lt;&gt;();</span><br><span class="line">        bean.setName(&quot;costFilter&quot;);</span><br><span class="line">        CostFilter costFilter &#x3D; new CostFilter();</span><br><span class="line">        bean.setFilter(costFilter);</span><br><span class="line">        bean.setOrder(1);</span><br><span class="line">        List&lt;String&gt; urlList &#x3D; new ArrayList&lt;String&gt;();</span><br><span class="line">        urlList.add(&quot;&#x2F;*&quot;);</span><br><span class="line">        bean.setUrlPatterns(urlList);</span><br><span class="line">        return bean;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="6、token拦截"><a href="#6、token拦截" class="headerlink" title="6、token拦截"></a>6、token拦截</h4><h5 id="6-1JWT"><a href="#6-1JWT" class="headerlink" title="6.1JWT"></a>6.1JWT</h5><p>jwt工具类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">public class JwtUtils &#123;</span><br><span class="line"></span><br><span class="line">    public static SecretKey getBase64Key() &#123;</span><br><span class="line">        String stringKey &#x3D; &quot;MyJwtSecret&quot;;</span><br><span class="line">        byte[] encodeKey &#x3D; Base64.getDecoder().decode(stringKey);</span><br><span class="line">        SecretKey key &#x3D; new SecretKeySpec(encodeKey, 0, encodeKey.length, &quot;AES&quot;);</span><br><span class="line">        return key;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 签发token</span><br><span class="line">     *</span><br><span class="line">     * @param userName 用户名</span><br><span class="line">     * @return token</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static String create(String userName) &#123;</span><br><span class="line">        Date now &#x3D; new Date(System.currentTimeMillis());</span><br><span class="line">        String token &#x3D; Jwts.builder()</span><br><span class="line">                .setIssuedAt(now)</span><br><span class="line">                .setSubject(userName)</span><br><span class="line">                .setExpiration(new Date(System.currentTimeMillis() + 60 * 60 * 1000))</span><br><span class="line">                .signWith(SignatureAlgorithm.HS256, getBase64Key())</span><br><span class="line">                .compact();</span><br><span class="line"></span><br><span class="line">        return token;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 解析token</span><br><span class="line">     *</span><br><span class="line">     * @param token token</span><br><span class="line">     * @return 用户名</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static String parse(String token) &#123;</span><br><span class="line">        String username &#x3D; null;</span><br><span class="line">        try &#123;</span><br><span class="line">            username &#x3D; Jwts.parser()</span><br><span class="line">                    .setSigningKey(getBase64Key())</span><br><span class="line">                    .parseClaimsJws(token.replace(&quot;Bearer &quot;, &quot;&quot;))</span><br><span class="line">                    .getBody()</span><br><span class="line">                    .getSubject();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        return username;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 检验token是否过期</span><br><span class="line">     *</span><br><span class="line">     * @param token</span><br><span class="line">     * @return</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static boolean verify(String token) &#123;</span><br><span class="line">        Date expiraDate &#x3D; null;</span><br><span class="line">        Date currentDate &#x3D; new Date();</span><br><span class="line">        try &#123;</span><br><span class="line">            expiraDate &#x3D; Jwts.parser()</span><br><span class="line">                    .setSigningKey(getBase64Key())</span><br><span class="line">                    .parseClaimsJws(token.replace(&quot;Bearer &quot;, &quot;&quot;))</span><br><span class="line">                    .getBody()</span><br><span class="line">                    .getExpiration();</span><br><span class="line">            if (currentDate.before(expiraDate)) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="6-2token拦截器"><a href="#6-2token拦截器" class="headerlink" title="6.2token拦截器"></a>6.2token拦截器</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS01MzMwZjU3ZTVkNTcxOTYzLnBuZw?x-oss-process=image/format,png" alt="图片.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">@Component</span><br><span class="line">public class TokenInterceptor implements HandlerInterceptor &#123;</span><br><span class="line"></span><br><span class="line">    public Log log &#x3D; LogFactory.getLog(TokenInterceptor.class);</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)&#123;</span><br><span class="line">        if (request.getMethod().equals(&quot;OPTIONS&quot;)) &#123;</span><br><span class="line">            response.setStatus(HttpServletResponse.SC_OK);</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        response.setCharacterEncoding(&quot;utf-8&quot;);</span><br><span class="line">        String token &#x3D; request.getHeader(&quot;Authorization&quot;);</span><br><span class="line">        if (token !&#x3D; null) &#123;</span><br><span class="line">            boolean result &#x3D; JwtUtils.verify(token);</span><br><span class="line">            if (result) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        log.error(&quot;认证失败&quot;);</span><br><span class="line">        response.setStatus(HttpServletResponse.SC_NON_AUTHORITATIVE_INFORMATION);</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="6-3配置拦截器"><a href="#6-3配置拦截器" class="headerlink" title="6.3配置拦截器"></a>6.3配置拦截器</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1lZjEyNWRjZWNhZjcyODA4LnBuZw?x-oss-process=image/format,png" alt="图片.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">public class InterceptorConfig extends WebMvcConfigurationSupport &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private TokenInterceptor tokenInterceptor;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void addInterceptors(InterceptorRegistry registry) &#123;</span><br><span class="line">        registry.addInterceptor(tokenInterceptor)</span><br><span class="line">                .addPathPatterns(&quot;&#x2F;**&quot;)</span><br><span class="line">                .excludePathPatterns(&quot;&#x2F;**&#x2F;login&quot;)</span><br><span class="line">                .excludePathPatterns(&quot;&#x2F;**&#x2F;logOut&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="7、完成一个登录接口LoginController"><a href="#7、完成一个登录接口LoginController" class="headerlink" title="7、完成一个登录接口LoginController"></a>7、完成一个登录接口<code>LoginController</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">@RestController</span><br><span class="line">@RequestMapping(&quot;&#x2F;system&quot;)</span><br><span class="line">public class LoginController extends BaseController &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private UserService userService;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 浏览器点击登录</span><br><span class="line">     *</span><br><span class="line">     * @param user</span><br><span class="line">     * @return</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @PostMapping(&quot;&#x2F;login&quot;)</span><br><span class="line">    public R login(@RequestBody User user) &#123;</span><br><span class="line">        log.debug(&quot;------浏览器点击登录------&quot;);</span><br><span class="line">        String userName &#x3D; user.getUsername();</span><br><span class="line">        String passWord &#x3D; user.getPassword();</span><br><span class="line">        UsernamePasswordToken usernamePasswordToken &#x3D; new UsernamePasswordToken(userName, MD5.md5Salt(passWord, userName));</span><br><span class="line">        Subject subject &#x3D; SecurityUtils.getSubject();</span><br><span class="line">        try &#123;</span><br><span class="line">            subject.login(usernamePasswordToken);</span><br><span class="line">            String token &#x3D; JwtUtils.create(userName);</span><br><span class="line">            return R.ok(R.SUCCESS, R.MSG_SUCCESS, token);</span><br><span class="line">        &#125; catch (AuthenticationException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            return R.error(R.MSG_LOGIN_ERROR);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+      </div>
+      
+        <br>
+        <p> <a href="https://www.jianshu.com/u/4e67854d8dc4" target="_blank" rel="noopener">简书</a> <br> <a href="https://cloud.tencent.com/developer/column/78320" target="_blank" rel="noopener">腾讯云社区</a> <br>  <a href="https://juejin.im/user/5d3be668f265da1b8e70e70f" target="_blank" rel="noopener">掘金</a><br> <a href="https://me.csdn.net/Devilli0310" target="_blank" rel="noopener">CSDN</a><br> 微信公共号：<img src="/asset/wx/wx.jpg" alt=""></p>
+
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-01T11:20:50+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2020年1月1日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>微服务</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.lida1024.top/2020/01/01/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BASpring-Boot%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF%E6%95%B4%E5%90%88/&title=快速搭建Spring Boot项目及常用技术整合 | 一觉睡到小时候&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.lida1024.top/2020/01/01/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BASpring-Boot%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF%E6%95%B4%E5%90%88/&title=快速搭建Spring Boot项目及常用技术整合 | 一觉睡到小时候&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://www.lida1024.top/2020/01/01/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BASpring-Boot%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF%E6%95%B4%E5%90%88/&title=快速搭建Spring Boot项目及常用技术整合 | 一觉睡到小时候&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                          <h4>
+                              <a href="/2020/01/01/%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%E5%8F%8A%E5%90%84%E9%98%B6%E6%AE%B5%E8%AF%B4%E6%98%8E/" rel="prev" title="软件版本命名规范及各阶段说明">
+                                
+                                    软件版本命名规范及各阶段说明
+                                
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/%E8%A7%84%E8%8C%83/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 规范</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2020/01/01/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3-Spring-Cloud-Gateway/" rel="prev" title="微服务网关 Spring Cloud Gateway">
+                                  
+                                      微服务网关 Spring Cloud Gateway
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 微服务</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '快速搭建Spring Boot项目及常用技术整合',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://s2.ax1x.com/2019/12/13/QcW5TI.png'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">一觉睡到小时候</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://cloud.tencent.com/developer/column/78320"
+              class="social fab fa-skyatlas flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://www.jianshu.com/u/4e67854d8dc4"
+              class="social fas fa-book flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://juejin.im/user/5d3be668f265da1b8e70e70f"
+              class="social fab fa-viacoin flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://me.csdn.net/Devilli0310"
+              class="social fas fa-child flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=257666747"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='material'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content material'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-Boot简介"><span class="toc-text">Spring Boot简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-Boot特点"><span class="toc-text">Spring Boot特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速入门"><span class="toc-text">快速入门</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、访问http-start-spring-io-构建项目，也可在idea创建如下图："><span class="toc-text">1、访问http:&#x2F;&#x2F;start.spring.io&#x2F;构建项目，也可在idea创建如下图：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、-springboot默认生成三个文件"><span class="toc-text">2、 springboot默认生成三个文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-pom-xml"><span class="toc-text">2.1 pom.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-application-properties"><span class="toc-text">2.2 application.properties</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-3-启动类文件"><span class="toc-text">2.3 启动类文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-4-验证springboot"><span class="toc-text">2.4 验证springboot</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#完成项目"><span class="toc-text">完成项目</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#完整项目目录"><span class="toc-text">完整项目目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1、项目依赖"><span class="toc-text">1、项目依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、配置文件"><span class="toc-text">2、配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1修改application-properties为application-yml"><span class="toc-text">2.1修改application.properties为application.yml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-新建application-dev-yml"><span class="toc-text">2.2 新建application-dev.yml</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、数据库连接池"><span class="toc-text">3、数据库连接池</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4、shiro"><span class="toc-text">4、shiro</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-1自定义realm"><span class="toc-text">4.1自定义realm</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-2shiro配置"><span class="toc-text">4.2shiro配置</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5、过滤器-跨域过滤"><span class="toc-text">5、过滤器-跨域过滤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1跨域过滤"><span class="toc-text">5.1跨域过滤</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-过滤器配置"><span class="toc-text">5.2 过滤器配置</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6、token拦截"><span class="toc-text">6、token拦截</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#6-1JWT"><span class="toc-text">6.1JWT</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-2token拦截器"><span class="toc-text">6.2token拦截器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-3配置拦截器"><span class="toc-text">6.3配置拦截器</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7、完成一个登录接口LoginController"><span class="toc-text">7、完成一个登录接口LoginController</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='material'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/Java/" href="/categories/Java/"><div class='name'>Java</div><div class='badge'>(22)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/JavaScript/" href="/categories/JavaScript/"><div class='name'>JavaScript</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/SpringBoot/" href="/categories/SpringBoot/"><div class='name'>SpringBoot</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"><div class='name'>微服务</div><div class='badge'>(4)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/Consul/" style="font-size: 14px; color: #999">Consul</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/JWT/" style="font-size: 14px; color: #999">JWT</a> <a href="/tags/Java/" style="font-size: 14px; color: #999">Java</a> <a href="/tags/Spring/" style="font-size: 14px; color: #999">Spring</a> <a href="/tags/SpringBoot/" style="font-size: 19px; color: #777">SpringBoot</a> <a href="/tags/SpringCloud/" style="font-size: 14px; color: #999">SpringCloud</a> <a href="/tags/Thread/" style="font-size: 14px; color: #999">Thread</a> <a href="/tags/Tomcat/" style="font-size: 14px; color: #999">Tomcat</a> <a href="/tags/enum/" style="font-size: 14px; color: #999">enum</a> <a href="/tags/file/" style="font-size: 14px; color: #999">file</a> <a href="/tags/javaScript/" style="font-size: 14px; color: #999">javaScript</a> <a href="/tags/json/" style="font-size: 14px; color: #999">json</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/token/" style="font-size: 14px; color: #999">token</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">反射</a> <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 14px; color: #999">小程序</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 24px; color: #555">微服务</a> <a href="/tags/%E6%89%93%E5%8C%85%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">打包部署</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 14px; color: #999">数据类型</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E8%A7%84%E8%8C%83/" style="font-size: 14px; color: #999">规范</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget related_posts'>
+    
+<header class='material'>
+  <div><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;相关文章</div>
+  
+</header>
+
+    <div class="content material">
+      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\2020\01\01\zipkin\" title="zipkin" rel="bookmark">zipkin</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\2020\01\01\微服务注册中心为什么要使用Consul？\" title="微服务注册中心为什么要使用Consul？" rel="bookmark">微服务注册中心为什么要使用Consul？</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\2020\01\01\微服务网关-Spring-Cloud-Gateway\" title="微服务网关 Spring Cloud Gateway" rel="bookmark">微服务网关 Spring Cloud Gateway</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\2019\07\26\GSON搞定任何JSON数据\" title="GSON搞定任何JSON数据" rel="bookmark">GSON搞定任何JSON数据</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\2019\08\14\Spring-Boot-Undertow容器启动\" title="Spring Boot - Undertow容器启动" rel="bookmark">Spring Boot - Undertow容器启动</a></h3></div></li></ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://cloud.tencent.com/developer/column/78320"
+            class="social fab fa-skyatlas flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://www.jianshu.com/u/4e67854d8dc4"
+            class="social fas fa-book flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://juejin.im/user/5d3be668f265da1b8e70e70f"
+            class="social fab fa-viacoin flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://me.csdn.net/Devilli0310"
+            class="social fas fa-child flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=257666747"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>
+    本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("08/10/2018 17:38:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
