@@ -103,6 +103,10 @@ type: atom
 path: atom.xml
 limit: 20
 
+leancloud:
+  app_id: 2QgfvOf5oXb0mJPSXMwhhCl7-gzGzoHsz
+  app_key: R4jnLMFsVtaBHjoyujyhXdS1
+
 theme: material-x
 
 # Deployment

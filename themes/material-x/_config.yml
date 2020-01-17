@@ -53,6 +53,7 @@ backstretch:
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
+    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0xNGVmN2Y4YTU0MWZhNjg5LnBuZw?x-oss-process=image/format,png
 
 
 
@@ -60,10 +61,10 @@ backstretch:
 # page的封面
 cover:
   scheme: search    # 后期将会提供多种封面方案
-  height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
+  height: full      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
   title: 一觉睡到小时候
   # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
-  # search_placeholder: '搜索'
+  search_placeholder: '搜索'
   # 主页封面菜单
   features:
     - name: 首页
@@ -80,14 +81,6 @@ cover:
     - name: 归档
       icon: fas fa-archive
       url: archives/
-      rel: nofollow
-    - name: 友链
-      icon: fas fa-link 
-      url: links/
-      rel: nofollow
-    - name: 关于
-      icon: fas fa-info-circle
-      url: about/
       rel: nofollow
 
 
@@ -108,14 +101,6 @@ menu_desktop:
     icon: fas fa-archive
     url: archives/
     rel: nofollow
-  - name: 友链
-    icon: fas fa-link 
-    url: links/
-    rel: nofollow
-  - name: 关于
-    icon: fas fa-info-circle
-    url: about/
-    rel: nofollow
 
 # 手机端导航菜单（从右上角的按钮点击展开）
 menu_mobile:
@@ -133,14 +118,6 @@ menu_mobile:
   - name: 归档
     icon: fas fa-archive
     url: archives/
-    rel: nofollow
-  - name: 友链
-    icon: fas fa-link 
-    url: links/
-    rel: nofollow
-  - name: 关于
-    icon: fas fa-info-circle
-    url: about/
     rel: nofollow
 
 layout:
@@ -179,13 +156,9 @@ sidebar:
     icon: fas fa-map-signs
     title: 站内导航
     rows:
-      - name: 近期文章
-        icon: fas fa-clock
-        url: /
-      - name: 文章归档
-        icon: fas fa-archive
-        url: archives/
-        rel: nofollow
+      - name: 友链
+        icon: fas fa-link
+        url: links/
       - name: 关于小站
         icon: fas fa-info-circle
         url: about/
@@ -254,7 +227,7 @@ share:
 
 footer_post: '
 [简书](https://www.jianshu.com/u/4e67854d8dc4) <br>
-[腾讯云社区](https://cloud.tencent.com/developer/column/78320) <br> 
+[云+社区](https://cloud.tencent.com/developer/column/78320) <br> 
 [掘金](https://juejin.im/user/5d3be668f265da1b8e70e70f)<br>
 [CSDN](https://me.csdn.net/Devilli0310)<br>
 微信公共号：![](/asset/wx/wx.jpg )'
@@ -281,9 +254,9 @@ valine:
   enable: true # 如果你想用Valine评论系统，请设置enable为true
   volantis: true # 是否启用volantis版本（禁止匿名，增加若干贴吧、QQ表情）
   # 还需要在根目录配置文件中添加下面这三行内容
-  # leancloud:
-  #   app_id: 你的appId
-  #   app_key: 你的appKey
+  leancloud:
+    app_id: 2QgfvOf5oXb0mJPSXMwhhCl7-gzGzoHsz
+    app_key: R4jnLMFsVtaBHjoyujyhXdS1
   guest_info: nick,mail,link #valine comment header info
   placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
   avatar: mp # gravatar style https://valine.js.org/avatar
