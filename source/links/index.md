@@ -8,7 +8,7 @@ links:
     items:
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> xaoxuxu'
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@18.12.27/avatar/avatar.png
-      url: '#comments'
+      url: https://xaoxuu.com/
       backgroundColor: '#864981'
       textColor: '#FFFD'
       tags:
