@@ -53,7 +53,10 @@ backstretch:
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
+    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1hNTIxM2ZiOTNmZjRjN2EwLmpwZw?x-oss-process=image/format,png
     - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0xNGVmN2Y4YTU0MWZhNjg5LnBuZw?x-oss-process=image/format,png
+    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS01ODRmZTM1NTk0M2M4ZWI1LmpwZw?x-oss-process=image/format,png
+    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS01NGQzMDg3YWEyYWNiYjEwLmpwZw?x-oss-process=image/format,png 
 
 
 
