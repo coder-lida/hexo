@@ -33,13 +33,23 @@ links:
       - SpringBoot
       - 微服务
       - Linux
+  - group: 虐狗博
+    icon: fas fa-handshake
+    items:
+    - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 木子博客'
+      avatar: https://muuzi.cn/mzlogo.png
+      url: 'https://muuzi.cn'
+      backgroundColor: '#869989'
+      textColor: '#FFFD'
+      tags:
+      - 用生活记录我们的爱！	  
   - group: 欢迎各行各业的朋友
     icon: fas fa-handshake
     items:
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 赶快留言吧'
       avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
       url: '#comments'
-      backgroundColor: '#869989'
+      backgroundColor: '#FFB6C1'
       textColor: '#FFFD'
       tags:
       - 1~4个标签
