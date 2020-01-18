@@ -33,7 +33,6 @@ links:
       - SpringBoot
       - 微服务
       - Linux
-	items:
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> okaychen'
       avatar: https://cdn.jsdelivr.net/gh/okaychen/CDN@1.0/BlogSource/icon/header.jpg
       url: ' https://www.chenqaq.com'
