@@ -41,7 +41,7 @@ links:
       tags:
       - 浅笔墨画❀琐碎小记 
 	- name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> Toretto'
-      avatar: https://cdn.jsdelivr.net/gh/Zou-Wang/cdn@1.0/img/yuzu/yuzu.jpg
+      avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
       url: ' https://zouwang.vip/'
       backgroundColor: '#00FFFF'
       textColor: '#FFFD'
