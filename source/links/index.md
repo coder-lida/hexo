@@ -36,20 +36,34 @@ links:
   - group: 虐狗博
     icon: fas fa-handshake
     items:
+    - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 木朵爱'
+      avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
+      url: 'http://www.muduoai.cn/'
+      backgroundColor: '#FFB6C1'
+      textColor: '#FFFD'
+      tags:
+      - 木木与朵朵的爱博！
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 木子博客'
       avatar: https://muuzi.cn/mzlogo.png
       url: 'https://muuzi.cn'
-      backgroundColor: '#869989'
+      backgroundColor: '#DDA0DD'
       textColor: '#FFFD'
       tags:
-      - 用生活记录我们的爱！	  
+      - 用生活记录我们的爱！
+    - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> LOVE109❤️纪实小屋'
+      avatar: https://www.love109.cn/images/love109.jpg
+      url: 'https://www.love109.cn/'
+      backgroundColor: '#FF69B4'
+      textColor: '#FFFD'
+      tags:
+      - 记录爱情 记录生活！		  
   - group: 欢迎各行各业的朋友
     icon: fas fa-handshake
     items:
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 赶快留言吧'
       avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
       url: '#comments'
-      backgroundColor: '#FFB6C1'
+      backgroundColor: '#7FFFAA'
       textColor: '#FFFD'
       tags:
       - 1~4个标签
