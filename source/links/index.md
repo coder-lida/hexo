@@ -41,6 +41,13 @@ links:
       textColor: '#FFFD'
       tags:
       - 浅笔墨画❀琐碎小记 
+	- name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> Toretto'
+      avatar: https://cdn.jsdelivr.net/gh/Zou-Wang/cdn@1.0/img/yuzu/yuzu.jpg
+      url: ' https://zouwang.vip/'
+      backgroundColor: '#00FFFF'
+      textColor: '#FFFD'
+      tags:
+      - 春原庄的雪 
   - group: 虐狗博
     icon: fas fa-handshake
     items:
