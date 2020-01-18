@@ -8,7 +8,7 @@ links:
     items:
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> xaoxuxu'
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@18.12.27/avatar/avatar.png
-      url: '#comments'
+      url: 'https://xaoxuu.com/'
       backgroundColor: '#864981'
       textColor: '#FFFD'
       tags:
@@ -25,13 +25,15 @@ links:
       - 前端
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 赶快留言吧'
       avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
-      url: '#comments'
+      url: 'https://www.jitwxs.cn/'
       backgroundColor: '#669929'
       textColor: '#FFFD'
       tags:
-      - 1~4个标签
-      - 两个最佳
-  - group: 欢迎各行各业的朋友2
+      - Java
+      - SpringBoot
+      - 微服务
+      - Linux
+  - group: 欢迎各行各业的朋友
     icon: fas fa-handshake
     items:
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> 赶快留言吧'
