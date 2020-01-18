@@ -35,18 +35,11 @@ links:
       - Linux
     - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> okaychen'
       avatar: https://cdn.jsdelivr.net/gh/okaychen/CDN@1.0/BlogSource/icon/header.jpg
-      url: ' https://www.chenqaq.com'
-      backgroundColor: '#864981'
+      url: 'https://www.chenqaq.com'
+      backgroundColor: '#7FFFAA'
       textColor: '#FFFD'
       tags:
-      - 浅笔墨画❀琐碎小记 
-	- name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> Toretto'
-      avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
-      url: ' https://zouwang.vip/'
-      backgroundColor: '#00FFFF'
-      textColor: '#FFFD'
-      tags:
-      - 春原庄的雪 
+      - 浅笔墨画❀琐碎小记  
   - group: 虐狗博
     icon: fas fa-handshake
     items:
