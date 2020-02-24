@@ -3,7 +3,7 @@ title: Spring Boot 两种部署到服务器的方式
 tags:
   - 打包部署
 categories:
-  - SpringBoot
+  - Java
 date: 2019-11-19 08:46:00
 cover: true
 

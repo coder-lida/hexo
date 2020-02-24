@@ -2,7 +2,7 @@ title: 开发中常用的 25 个JavaScript 单行代码
 tags:
   - javaScript
 categories:
-  - JavaScript
+  - Java
 date: 2019-07-26 11:34:00
 cover: true
 
