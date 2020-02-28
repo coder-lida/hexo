@@ -46,7 +46,23 @@ links:
       backgroundColor: '#DAA520'
       textColor: '#FFFD'
       tags:
-      - Java
+      - Java    
+    - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> Honey Blog'
+      avatar: http://huangwenlong.wicp.vip/files/e8247321-ef11-4ca5-afd4-9b2d03ac89d0.jpg
+      url: 'http://longge.zicp.vip'
+      backgroundColor: '#FF7F50'
+      textColor: '#FFFD'
+      tags:
+      - 这不单单是一个人的博客，你来你就有故事！
+    - name: '<i class="fas fa-comment fa-fw" aria-hidden="true"></i> PiggerChan'
+      avatar: https://www.piggerchan.com/favicon.ico
+      url: 'https://www.piggerchan.com'
+      backgroundColor: '#00BFFF'
+      textColor: '#FFFD'
+      tags:
+      - 产品和程序员的相爱相杀
+      - 前端
+
   - group: 虐狗博
     icon: fas fa-handshake
     items:
