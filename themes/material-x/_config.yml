@@ -54,17 +54,12 @@ backstretch:
   fade: 2500     # 渐变（毫秒）
   images:
     - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1hNTIxM2ZiOTNmZjRjN2EwLmpwZw?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0xNGVmN2Y4YTU0MWZhNjg5LnBuZw?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS01ODRmZTM1NTk0M2M4ZWI1LmpwZw?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS01NGQzMDg3YWEyYWNiYjEwLmpwZw?x-oss-process=image/format,png 
-
-
 
 ############################### 自定义 ###############################
 # page的封面
 cover:
   scheme: search    # 后期将会提供多种封面方案
-  height: full      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
+  height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
   title: 一觉睡到小时候
   # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
   search_placeholder: '搜索'
