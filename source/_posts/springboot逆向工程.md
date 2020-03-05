@@ -2,7 +2,7 @@ title: springboot逆向工程
 tags:
   - SpringBoot
 categories:
-  - Java
+  - 技术
 date: 2019-07-27 09:45:00
 cover: true
 

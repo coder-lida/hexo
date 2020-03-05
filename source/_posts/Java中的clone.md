@@ -1,8 +1,8 @@
 title: Java中的clone
 tags:
-  - Java
+  - Java基础
 categories:
-  - Java
+  - 技术
 date: 2020-01-13 07:56:00
 cover: true
 

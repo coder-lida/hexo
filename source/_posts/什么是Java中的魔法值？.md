@@ -2,7 +2,7 @@ title: 什么是Java中的魔法值？
 tags:
   - 规范
 categories:
-  - Java
+  - 技术
 date: 2020-01-20 08:40:00
 cover: true
 

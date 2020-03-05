@@ -2,7 +2,7 @@ title: Spring Boot - Undertow容器启动
 tags:
   - SpringBoot
 categories:
-  - Java
+  - 技术
 date: 2019-08-14 15:00:00
 cover: true
 

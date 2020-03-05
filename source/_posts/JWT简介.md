@@ -3,7 +3,7 @@ title: JWT简介
 tags:
   - JWT
 categories:
-  - Java
+  - 技术
 date: 2019-12-21 08:43:00
 cover: true
 

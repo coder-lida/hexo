@@ -2,7 +2,7 @@ title: 快速搭建Spring Boot项目及常用技术整合
 tags:
   - 微服务
 categories:
-  - Java
+  - 技术
 date: 2020-01-01 11:18:00
 cover: true
 

@@ -2,7 +2,7 @@ title: SpringBoot使用Undertow代替tomcat
 tags:
   - SpringBoot
 categories:
-  - Java
+  - 技术
 date: 2019-08-14 15:56:00
 cover: true
 

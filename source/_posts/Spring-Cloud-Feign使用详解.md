@@ -3,7 +3,7 @@ title: Spring Cloud Feign使用详解
 tags:
   - SpringCloud
 categories:
-  - Java
+  - 技术
 date: 2019-11-19 08:35:00
 cover: true
 

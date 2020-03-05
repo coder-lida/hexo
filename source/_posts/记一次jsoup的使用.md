@@ -2,7 +2,7 @@ title: 记一次jsoup的使用
 tags:
   - 爬虫
 categories:
-  - Java
+  - 技术
 date: 2019-07-06 15:46:00
 cover: true
 

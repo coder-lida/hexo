@@ -2,7 +2,7 @@ title: 微服务注册中心为什么要使用Consul？
 tags:
   - 微服务
 categories:
-  - Java
+  - 技术
 date: 2020-01-01 11:03:00
 cover: true
 

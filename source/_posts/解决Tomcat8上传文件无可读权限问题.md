@@ -2,7 +2,7 @@ title: 解决Tomcat8上传文件无可读权限问题
 tags:
   - Tomcat
 categories:
-  - Java
+  - 技术
 date: 2020-01-01 11:34:00
 cover: true
 

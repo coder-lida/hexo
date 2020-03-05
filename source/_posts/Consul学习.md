@@ -3,7 +3,7 @@ title: Consul学习
 tags:
   - Consul
 categories:
-  - Java
+  - 技术
 date: 2019-11-19 08:43:00
 cover: true
 

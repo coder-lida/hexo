@@ -2,7 +2,7 @@ title: 微服务网关 Spring Cloud Gateway
 tags:
   - 微服务
 categories:
-  - Java
+  - 技术
 date: 2020-01-01 11:09:00
 cover: true
 

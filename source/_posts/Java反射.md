@@ -2,7 +2,7 @@ title: Java反射
 tags:
   - 反射
 categories:
-  - Java
+  - 技术
 date: 2020-01-06 07:57:00
 cover: true
 

@@ -2,7 +2,7 @@ title: java线程创建全家桶
 tags:
   - Thread
 categories:
-  - Java
+  - 技术
 date: 2019-09-16 13:52:00
 cover: true
 

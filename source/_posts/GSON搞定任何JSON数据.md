@@ -3,7 +3,7 @@ title: GSON搞定任何JSON数据
 tags:
   - json
 categories:
-  - Java
+  - 技术
 date: 2019-07-26 11:41:00
 cover: true
 

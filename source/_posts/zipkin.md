@@ -2,7 +2,7 @@ title: zipkin
 tags:
   - 微服务
 categories:
-  - Java
+  - 技术
 date: 2020-01-01 11:39:00
 cover: true
 

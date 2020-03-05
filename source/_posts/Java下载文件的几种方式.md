@@ -3,7 +3,7 @@ title: 'Java下载文件的几种方式 '
 tags:
   - file
 categories:
-  - Java
+  - 技术
 date: 2019-09-12 09:54:00
 cover: true
 

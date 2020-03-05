@@ -3,7 +3,7 @@ author: Monday
 tags:
   - Spring
 categories:
-  - Java
+  - 技术
 date: 2019-08-15 11:08:00
 cover: true
 
