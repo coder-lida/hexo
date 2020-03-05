@@ -38,7 +38,7 @@ music:
   autoplay: false   # 自动播放
 
 # 友链页头像占位图
-avatar_placeholder: https://s2.ax1x.com/2019/12/13/QcW5TI.png
+avatar_placeholder: http://q6pznk9ej.bkt.clouddn.com/logoImg.png
 
 # 日期格式 http://momentjs.com/docs/
 date_format: 'YYYY-MM-DD' # 文章发布日期的格式
@@ -53,12 +53,12 @@ backstretch:
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1hNTIxM2ZiOTNmZjRjN2EwLmpwZw?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1jNjg1MzhjZGM4NTQ2ZDQxLmpwZWc?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS03Mzc0OGEwZjUxMzhlYWVjLmpwZWc?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0wNWZmNjJlYjg0YTFmZTBhLmpwZWc?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS04MjRkOGUxMjIyODA0MmYzLmpwZWc?x-oss-process=image/format,png
-    - https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1hMTVjNGMwYjQyMTJlOGJkLmpwZWc?x-oss-process=image/format,png
+    - http://q6pznk9ej.bkt.clouddn.com/bg0.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg1.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg2.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg3.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg4.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg5.jpeg
 
 
 ############################### 自定义 ###############################
@@ -160,7 +160,7 @@ layout:
 # 侧边栏小部件配置
 sidebar:
   - widget: author
-    avatar: https://s2.ax1x.com/2019/12/13/QcW5TI.png
+    avatar: http://q6pznk9ej.bkt.clouddn.com/logoImg.png
     jinrishici: true
     social: true
 #  - widget: plain
