@@ -52,7 +52,12 @@ backstretch:
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/bg.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg0.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg1.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg2.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg3.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg4.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/bg5.jpeg
 
 
 ############################### 自定义 ###############################
