@@ -4,12 +4,11 @@ info:
   docs: https://xaoxuu.com/wiki/material-x/
   cdn: # 要使用CDN，请在根目录的config文件中写上 use_cdn: true
     css:
-      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11.26/css/style.css
+      style: https://cdn.jsdelivr.net/gh/coder-lida/CDN/css/style.css
     js:
-      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js
-      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js
-      volantis: https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js
-
+      app: https://cdn.jsdelivr.net/gh/coder-lida/CDN/js/app.js
+      search: https://cdn.jsdelivr.net/gh/coder-lida/CDN/js/search.js
+      volantis: https://cdn.jsdelivr.net/gh/coder-lida/CDN/js/volantis.min.js
 
 
 ############################### 主题风格 ###############################
@@ -226,16 +225,16 @@ social:
 share:
   - id: qq
     name: QQ好友
-    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png
+    img: https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/qq.png
   - id: qzone
     name: QQ空间
-    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png
+    img: https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/qzone.png
   # - id: qrcode
   #   name: 微信
   #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
   - id: weibo
     name: 微博
-    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png
+    img: https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/weibo.png
   # - id: qrcode
   #   name: QRcode
   #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
