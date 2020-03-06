@@ -8,7 +8,7 @@ cover: true
 
 ---
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1lZWEzZDRhYjIyOGVmNjIxLmpwZw?x-oss-process=image/format,png)
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%283%29.jpeg)
 <!-- more -->
 ### Spring Boot简介
 Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。

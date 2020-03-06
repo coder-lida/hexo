@@ -7,7 +7,7 @@ date: 2019-09-16 13:52:00
 cover: true
 
 ---
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1mZTJhMWRhM2Q1NGQ3OTgxLmpwZw?x-oss-process=image/format,png )
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%281%29.png)
 <!-- more -->
 
 ## 继承Thread类

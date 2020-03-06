@@ -8,7 +8,7 @@ cover: true
 
 ---
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1lMjE2MjFhMjZlNjVhOGQ5LmpwZw?x-oss-process=image/format,png)
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%285%29.png)
 <!-- more -->
 ## 什么是网关
 假设你现在要做一个电商应用，前端是移动端的APP，后端是各种微服务。那你可能某个页面需要调用多个服务的数据来展示。如果没有网关，你的系统看起来就是这个样子的：

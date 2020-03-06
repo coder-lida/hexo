@@ -7,7 +7,7 @@ date: 2020-01-13 07:56:00
 cover: true
 
 ---
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1hYWRiMDk5MzU4NWNkMjU1LmpwZw?x-oss-process=image/format,png )
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%2810%29.jpeg)
 <!-- more -->
 ## Java中对象的创建
 * 使用new操作符创建一个对象

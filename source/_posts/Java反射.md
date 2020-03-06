@@ -8,7 +8,7 @@ cover: true
 
 ---
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS1hNGQzN2EyYjc0MWZiOGVhLmpwZw?x-oss-process=image/format,png)
+![](http://q6pznk9ej.bkt.clouddn.com/bg5.jpeg)
 <!-- more -->
 ## 一、什么是反射？
 [JAVA反射机制](https://baike.baidu.com/item/JAVA%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/6015990)是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。

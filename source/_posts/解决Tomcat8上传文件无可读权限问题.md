@@ -8,7 +8,7 @@ cover: true
 
 ---
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS02ODAwODUwNDI0YWE0Y2M4LmpwZw?x-oss-process=image/format,png)
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%2823%29.jpeg)
 <!-- more -->
 ### 描述
 使用springmvc做了一个文件上传的功能，上传到nginx目录下的一个文件夹，但是通过目录访问的时候却报403的错误

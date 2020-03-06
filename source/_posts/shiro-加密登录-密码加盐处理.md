@@ -7,7 +7,7 @@ date: 2019-07-26 11:25:00
 cover: true
 
 ---
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0xYTgzZWZhMTJhZGI5MzAxLmpwZw?x-oss-process=image/format,png)
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%2814%29.jpeg)
 <!-- more -->
 
 密码加密登录是为了提高系统安全性，即使是管理员查看数据库也得不到密码
