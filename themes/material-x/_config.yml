@@ -169,7 +169,7 @@ sidebar:
 #    body: '这是一段支持markdown的文本<br>![](https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png)'
   - widget: toc
   - widget: grid
-    icon: fas fa-map-signs
+    icon: fas fa-film
     title: 站内导航
     rows:
       - name: 友链
