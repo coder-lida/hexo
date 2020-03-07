@@ -171,9 +171,9 @@ sidebar:
     icon: fas fa-film
     title: 站内导航
     rows:
-      - name: 友链
-        icon: fas fa-link
-        url: links/
+      - name: 影视
+        icon: fas fa-film
+        url: film/
       - name: 关于小站
         icon: fas fa-info-circle
         url: about/
