@@ -53,11 +53,6 @@ backstretch:
   fade: 2500     # 渐变（毫秒）
   images:
     - http://q6pznk9ej.bkt.clouddn.com/bg0.jpeg
-    - http://q6pznk9ej.bkt.clouddn.com/bg1.jpeg
-    - http://q6pznk9ej.bkt.clouddn.com/bg2.jpeg
-    - http://q6pznk9ej.bkt.clouddn.com/bg3.jpeg
-    - http://q6pznk9ej.bkt.clouddn.com/bg4.jpeg
-    - http://q6pznk9ej.bkt.clouddn.com/bg5.jpeg
 
 
 ############################### 自定义 ###############################
