@@ -4,6 +4,8 @@ tags:
 categories:
   - 技术
 date: 2020-03-11 09:08:00
+cover: true
+
 ---
 
 ![](http://q6pznk9ej.bkt.clouddn.com/img%20%284%29.png)

@@ -77,5 +77,8 @@ docker build -t springbootdemo4docker .
 ```
 
 ### 6.运行镜像
+```
+docker run -d -p 8088:8088 --name springbootdemo4docker
+```
 
 
