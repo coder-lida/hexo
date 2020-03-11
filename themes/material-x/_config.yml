@@ -163,10 +163,13 @@ sidebar:
 #    body: '这是一段支持markdown的文本<br>![](https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png)'
   - widget: toc
   - widget: grid
-    icon: fas fa-film
+    icon: fas fa-map-signs
     title: 站内导航
     rows:
-      - name: 影视
+      - name: 厨房
+        icon: fas fa-thumbs-up
+        url: film/
+        - name: 影视
         icon: fas fa-film
         url: film/
       - name: 关于小站
