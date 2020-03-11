@@ -2,8 +2,9 @@ title: Git常用命令
 tags:
   - Git
 categories:
-  - 技术
-date: 2020-03-05 18:53:00
+  - Dev
+  - tools
+date: 2020-02-29 18:53:00
 cover: true
 
 ---

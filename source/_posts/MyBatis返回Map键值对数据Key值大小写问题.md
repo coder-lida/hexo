@@ -2,7 +2,8 @@ title: MyBatis返回Map键值对数据Key值大小写问题
 tags:
   - MyBatis
 categories:
-  - 技术
+  - Dev
+  - Frame
 date: 2020-01-23 08:56:00
 cover: true
 

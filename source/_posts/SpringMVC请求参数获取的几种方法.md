@@ -2,7 +2,8 @@ title: SpringMVC请求参数获取的几种方法
 tags:
   - Spring
 categories:
-  - 技术
+  - Dev
+  - Frame
 date: 2019-08-15 11:08:00
 cover: true
 

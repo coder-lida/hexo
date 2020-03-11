@@ -2,7 +2,8 @@ title: 自己实现一个简单版的HashMap
 tags:
   - HashMap
 categories:
-  - 技术
+  - Dev
+  - Java
 date: 2019-07-26 11:54:00
 cover: true
 

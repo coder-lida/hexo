@@ -1,9 +1,10 @@
 title: Lambda表达式
 tags:
-  - lambda
+  - Lambda
 categories:
-  - 技术
-date: 2020-03-03 11:29:00
+  - Dev
+  - Java
+date: 2020-02-26 11:29:00
 cover: true
 
 ---

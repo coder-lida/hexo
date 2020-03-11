@@ -1,9 +1,10 @@
 title: ECharts地图省市联动
 tags:
-  - 前端
+  - ECharts
 categories:
-  - 技术
-date: 2020-03-09 20:22:00
+  - Dev
+  - Front
+date: 2020-03-05 20:22:00
 cover: true
 
 ---

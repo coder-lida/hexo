@@ -1,8 +1,9 @@
 title: shiro 加密登录 密码加盐处理
 tags:
-  - shiro
+  - Shiro
 categories:
-  - 技术
+  - Dev
+  - Frame
 date: 2019-07-26 11:25:00
 cover: true
 

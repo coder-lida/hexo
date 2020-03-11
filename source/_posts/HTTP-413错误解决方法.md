@@ -1,9 +1,10 @@
 title: HTTP 413错误解决方法
 tags:
-  - http
+  - Http
 categories:
-  - 技术
-date: 2020-03-04 11:26:00
+  - Dev
+  - Java
+date: 2020-02-27 11:26:00
 cover: true
 
 ---

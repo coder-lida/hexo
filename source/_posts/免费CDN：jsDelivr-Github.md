@@ -2,8 +2,9 @@ title: 免费CDN：jsDelivr + Github
 tags:
   - Hexo
 categories:
-  - 技术
-date: 2020-03-07 08:44:00
+  - Dev
+  - Hexo
+date: 2020-03-03 08:44:00
 cover: true
 
 ---

@@ -2,8 +2,9 @@ title: 将SpringBoot项目发布到Docker
 tags:
   - 部署
 categories:
-  - 技术
-date: 2020-03-10 19:33:00
+  - Dev
+  - Container
+date: 2020-03-06 19:33:00
 cover: true
 
 ---

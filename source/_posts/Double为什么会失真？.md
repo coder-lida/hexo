@@ -2,7 +2,8 @@ title: Double为什么会失真？
 tags:
   - 数据类型
 categories:
-  - 技术
+  - Dev
+  - Java
 date: 2020-01-07 13:43:00
 cover: true
 

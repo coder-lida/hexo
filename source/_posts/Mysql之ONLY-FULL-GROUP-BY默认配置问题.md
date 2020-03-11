@@ -2,8 +2,9 @@ title: Mysql之ONLY_FULL_GROUP_BY默认配置问题
 tags:
   - 数据库
 categories:
-  - 技术
-date: 2020-03-11 10:58:00
+  - Dev
+  - DataBase
+date: 2020-03-08 10:58:00
 cover: true
 
 ---

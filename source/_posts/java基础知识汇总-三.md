@@ -1,8 +1,9 @@
 title: java基础知识汇总(三)
 tags:
-  - java基础
+  - Java基础
 categories:
-  - 技术
+  - Dev
+  - Java
 date: 2020-03-11 12:12:00
 cover: true
 

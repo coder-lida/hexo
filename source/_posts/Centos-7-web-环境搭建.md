@@ -3,8 +3,9 @@ author: 少年闰土
 tags:
   - 部署
 categories:
-  - 技术
-date: 2020-03-06 17:51:00
+  - Dev
+  - Linux
+date: 2020-03-01 17:51:00
 cover: true
 
 ---

@@ -2,7 +2,8 @@ title: 使用 Travis CI 自动更新 GitHub Pages
 tags:
   - Hexo
 categories:
-  - 技术
+  - Dev
+  - Hexo
 date: 2020-01-15 11:26:00
 cover: true
 ---

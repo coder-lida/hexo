@@ -1,9 +1,10 @@
 ---
 title: GSON搞定任何JSON数据
 tags:
-  - json
+  - Json
 categories:
-  - 技术
+  - Dev
+  - Java
 date: 2019-07-26 11:41:00
 cover: true
 

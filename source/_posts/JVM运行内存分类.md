@@ -2,8 +2,9 @@ title: JVM运行内存分类
 tags:
   - JVM
 categories:
-  - 技术
-date: 2020-03-08 20:58:00
+  - Dev
+  - Java
+date: 2020-03-04 20:58:00
 cover: true
 
 ---

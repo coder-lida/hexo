@@ -1,9 +1,10 @@
 ---
 title: 'Java下载文件的几种方式 '
 tags:
-  - file
+  - File
 categories:
-  - 技术
+  - Dev
+  - Java
 date: 2019-09-12 09:54:00
 cover: true
 

@@ -2,8 +2,9 @@ title: Java虚拟机是如何加载Java类的？
 tags:
   - JVM
 categories:
-  - 技术
-date: 2020-03-11 09:08:00
+  - Dev
+  - Java
+date: 2020-03-07 09:08:00
 cover: true
 
 ---

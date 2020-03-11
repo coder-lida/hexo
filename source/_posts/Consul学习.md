@@ -3,7 +3,8 @@ title: Consul学习
 tags:
   - Consul
 categories:
-  - 技术
+  - Dev
+  - Frame
 date: 2019-11-19 08:43:00
 cover: true
 

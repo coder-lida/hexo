@@ -2,7 +2,8 @@ title: zipkin
 tags:
   - 微服务
 categories:
-  - 技术
+  - Dev
+  - Frame
 date: 2020-01-01 11:39:00
 cover: true
 
