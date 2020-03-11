@@ -169,7 +169,7 @@ sidebar:
       - name: 厨房
         icon: fas fa-thumbs-up
         url: meal/
-        - name: 影视
+      - name: 影视
         icon: fas fa-film
         url: film/
       - name: 关于小站
