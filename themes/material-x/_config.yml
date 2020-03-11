@@ -168,7 +168,7 @@ sidebar:
     rows:
       - name: 厨房
         icon: fas fa-thumbs-up
-        url: film/
+        url: meal/
         - name: 影视
         icon: fas fa-film
         url: film/
