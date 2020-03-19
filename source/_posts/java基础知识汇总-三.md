@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6thylgbl.bkt.clouddn.com/haerhousejpeg.jpeg)
+![](http://q6pznk9ej.bkt.clouddn.com/java1.jpeg)
 <!-- more -->
 ## 21.静态方法和实例方法有何不同
 * 在外部调用静态方法时，可以使用"类名.方法名"的方式，也可以使用"对象名.方法名"的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。
