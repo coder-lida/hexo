@@ -3,7 +3,7 @@ tags:
   - Git
 categories:
   - Dev
-  - tools
+  - Tools
 date: 2020-02-29 18:53:00
 cover: true
 
