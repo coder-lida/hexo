@@ -1,11 +1,16 @@
 title: '快速搭建 Git 服务器[Windows版]'
-author: 少年闰土
 tags:
   - Git
 categories:
   - Dev
+  - Tool
 date: 2020-03-25 13:57:00
+cover: true
+
 ---
+
+![](http://q6pznk9ej.bkt.clouddn.com/img%20%2823%29.jpeg)
+<!-- more -->
 ## 服务器搭建
 ### 下载
 * 下载 JDK：[https://www.oracle.com/technetwork/java/javase/downloads/](https://www.oracle.com/technetwork/java/javase/downloads/)
