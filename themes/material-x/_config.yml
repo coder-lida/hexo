@@ -168,7 +168,7 @@ sidebar:
     rows:
       - name: 首页
         icon: fas fa-home
-        url: meal/
+        url: /
         rel: nofollow      
       - name: 分类
         icon: fas fa-folder-open
