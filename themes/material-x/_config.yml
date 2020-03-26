@@ -48,42 +48,42 @@ word_count: true
 
 # 幻灯片
 backstretch:
-  position: full  # cover: 封面背景   full: 整个网页背景
+  position: cover  # cover: 封面背景   full: 整个网页背景
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - http://q6pznk9ej.bkt.clouddn.com/bg0.jpeg
+    - http://q6pznk9ej.bkt.clouddn.com/sleep.png
 
 
 ############################### 自定义 ###############################
 # page的封面
 cover:
   scheme: search    # 后期将会提供多种封面方案
-  height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
+  height: full      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
   title: 一觉睡到小时候
   # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
   search_placeholder: '搜索'
   # 主页封面菜单
-  features:
-    - name: 首页
-      icon: fas fa-home
-      url: /
-    - name: 分类
-      icon: fas fa-folder-open
-      url: categories/
-      rel: nofollow
-    - name: 标签
-      icon: fas fa-hashtag
-      url: tags/
-      rel: nofollow
-    - name: 归档
-      icon: fas fa-archive
-      url: archives/
-      rel: nofollow
-    - name: 友链
-      icon: fas fa-link
-      url: links/
-      rel: nofollow
+ # features:
+ #   - name: 首页
+ #     icon: fas fa-home
+ #     url: /
+ #   - name: 分类
+ #     icon: fas fa-folder-open
+ #     url: categories/
+ #     rel: nofollow
+ #   - name: 标签
+ #     icon: fas fa-hashtag
+ #     url: tags/
+ #     rel: nofollow
+ #   - name: 归档
+ #     icon: fas fa-archive
+ #     url: archives/
+ #     rel: nofollow
+ #   - name: 友链
+ #     icon: fas fa-link
+ #     url: links/
+ #     rel: nofollow
 
 
 # 桌面端导航栏菜单
@@ -166,15 +166,25 @@ sidebar:
     icon: fas fa-map-signs
     title: 站内导航
     rows:
-      - name: 厨房
-        icon: fas fa-thumbs-up
+      - name: 首页
+        icon: fas fa-home
         url: meal/
-      - name: 影视
-        icon: fas fa-film
-        url: film/
-      - name: 关于小站
-        icon: fas fa-info-circle
-        url: about/
+        rel: nofollow      
+      - name: 分类
+        icon: fas fa-folder-open
+        url: categories/
+        rel: nofollow
+      - name: 标签
+        icon: fas fa-hashtag
+        url: tags/
+        rel: nofollow
+      - name: 归档
+        icon: fas fa-archive
+        url: archives/
+        rel: nofollow  
+      - name: 友链
+        icon: fas fa-link
+        url: links/
         rel: nofollow
   - widget: category
     more:
