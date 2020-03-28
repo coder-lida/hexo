@@ -10,6 +10,7 @@ cover: true
 ---
 
 ![](http://q6pznk9ej.bkt.clouddn.com/fish.jpg)
+<!-- more -->
 ## 下载
 如果未安装wget,则先安装wget
 ```
