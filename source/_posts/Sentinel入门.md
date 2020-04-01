@@ -44,6 +44,7 @@ cover: true
 * 控制台（Dashboard）基于 Spring Boot 开发，打包后可以直接运行，不需要额外的 Tomcat 等应用容器。
 
 ## 快速开始
+
 ### 1.添加pom依赖
 ```
 <dependency>
@@ -54,7 +55,7 @@ cover: true
 ```
 >注意: 从 Sentinel 1.5.0 开始仅支持 JDK 1.7 或者以上版本。Sentinel 1.5.0 之前的版本最低支持 JDK 1.6。
 
-## 2.定义资源
+### 2.定义资源
 接下来，我们把需要控制流量的代码用 Sentinel API SphU.entry("HelloWorld") 和 entry.exit() 包围起来即可。
 ```
 public static void main(String[] args) {
