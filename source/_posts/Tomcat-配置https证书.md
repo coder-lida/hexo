@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/tomcat.jepg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/tomcat.jpg)
 <!-- more -->
 >TTPS 是安全套接字层超文本传输协议，在http 的基础上加入了 SSL协议，需要使用证书来校验身份。 HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。其默认端口为：443。越来越多的网站使用了https，这里简介其相关配置。
 ## 一、使用jdk创建证书

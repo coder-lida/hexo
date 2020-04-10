@@ -5,9 +5,10 @@ categories:
   - Dev
   - Java
 date: 2020-03-21 14:01:00
+cover: true
 
 ---
-
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/MD5.jpg)
 <!-- more -->
 在回答这个问题之前，我们先分别来了解一下两个知识点：
 * 什么是 MD5 算法？

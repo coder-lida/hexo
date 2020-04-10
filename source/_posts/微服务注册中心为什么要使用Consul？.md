@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/weifuwu.jepg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/weifuwu.png)
 <!-- more -->
 ### 一、Eureka不建议使用
 

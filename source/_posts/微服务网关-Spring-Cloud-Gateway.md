@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/weifuwu.jepg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/weifuwu.png)
 <!-- more -->
 ## 什么是网关
 假设你现在要做一个电商应用，前端是移动端的APP，后端是各种微服务。那你可能某个页面需要调用多个服务的数据来展示。如果没有网关，你的系统看起来就是这个样子的：
