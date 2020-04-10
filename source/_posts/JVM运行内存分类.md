@@ -5,12 +5,13 @@ categories:
   - Dev
   - Java
 date: 2020-03-04 20:58:00
+cover: true
 
 ---
-
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/jvm.jpg)
 <!-- more -->
 
-![图片.png](http://q6pznk9ej.bkt.clouddn.com/jvm.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/jvm-1.png)
 
 ## 一、程序计数器
 
