@@ -5,10 +5,9 @@ categories:
   - Dev
   - Java
 date: 2020-01-13 07:56:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2810%29.jpeg)
+
 <!-- more -->
 ## Java中对象的创建
 * 使用new操作符创建一个对象

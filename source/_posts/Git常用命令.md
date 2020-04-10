@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/bg3.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.jpg)
 <!-- more -->
 
 >相关资料：

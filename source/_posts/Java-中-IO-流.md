@@ -5,10 +5,8 @@ categories:
   - Dev
   - Java
 date: 2020-03-12 08:52:00
-cover: true
 
 ---
-![](http://q6thylgbl.bkt.clouddn.com/spiritedwaayjpeg.jpeg)
 <!-- more -->
 
 ## Java 中 IO 流分为几种?

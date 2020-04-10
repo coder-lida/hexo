@@ -8,8 +8,7 @@ date: 2020-01-23 08:56:00
 cover: true
 
 ---
-
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2812%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/mybatis.png)
 <!-- more -->
 ## Controller
 ```

@@ -5,11 +5,9 @@ categories:
   - Dev
   - Frame
 date: 2020-01-01 11:39:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2820%29.jpeg)
 <!-- more -->
 ### Waht is zipkin?
 ![zipkin.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xMjU1MzI0OS0zYjQ1NTgzNDJhNWQ3NWVlLnBuZw?x-oss-process=image/format,png)

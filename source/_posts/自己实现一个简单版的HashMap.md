@@ -5,10 +5,8 @@ categories:
   - Dev
   - Java
 date: 2019-07-26 11:54:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%287%29.jpeg)
 <!-- more -->
 
 ## HashMap简介

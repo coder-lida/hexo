@@ -6,10 +6,9 @@ categories:
   - Tools
 date: 2020-03-28 15:05:00
 cover: true
-
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/index.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/maven.jpg)
 <!-- more -->
 ## 下载
 

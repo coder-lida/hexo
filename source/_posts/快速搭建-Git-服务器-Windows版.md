@@ -9,21 +9,21 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2823%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.jpg)
 <!-- more -->
 ## 服务器搭建
 
 ### 下载
 * 下载 JDK：[https://www.oracle.com/technetwork/java/javase/downloads/](https://www.oracle.com/technetwork/java/javase/downloads/)
 * 下载 Gitblit：[http://gitblit.com/](http://gitblit.com/)
-![gitblit.png](http://q6rnahf7l.bkt.clouddn.com/gitblit-download.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/gitblit-4.png)
 
 ### 解压
 解压缩下载的压缩包即可，无需安装。
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/gitblit-unzip.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/gitblit-5.png)
 
 ### 创建本地存储文件夹
-![图片.png](https://upload-images.jianshu.io/upload_images/12553249-a76cb14fde58df1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/gitblit-3.png)
 
 ### 配置
 打开data文件夹下的`gitblit.properties`
@@ -73,8 +73,8 @@ server.httpsBindInterface = localhost
 
 ### 运行
 运行gitblit.cmd
-![图片.png](https://upload-images.jianshu.io/upload_images/12553249-6b503e5eb808e0e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/gitblit-1.png)
 如上图则运行成功
 在浏览器中打开,现在就可以使用GitBlit了。默认用户名密码都是 admin
-![图片.png](https://upload-images.jianshu.io/upload_images/12553249-fafa7b54defcb599.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/gitblit-2.png)
 

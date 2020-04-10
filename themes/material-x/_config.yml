@@ -37,7 +37,7 @@ music:
   autoplay: false   # 自动播放
 
 # 友链页头像占位图
-avatar_placeholder: http://q6pznk9ej.bkt.clouddn.com/logoImg.png
+avatar_placeholder: https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/logoImg.png
 
 # 日期格式 http://momentjs.com/docs/
 date_format: 'YYYY-MM-DD' # 文章发布日期的格式
@@ -52,7 +52,7 @@ backstretch:
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - http://q6pznk9ej.bkt.clouddn.com/sleep.png
+    - https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/sleep.png
 
 
 ############################### 自定义 ###############################
@@ -154,7 +154,7 @@ layout:
 # 侧边栏小部件配置
 sidebar:
   - widget: author
-    avatar: http://q6pznk9ej.bkt.clouddn.com/logoImg.png
+    avatar: https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/logoImg.png
     jinrishici: true
     social: true
 #  - widget: plain

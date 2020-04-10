@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/java1.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 ##  1. 面向对象和面向过程的区别
 *    面向过程 ：面向过程性能比面向对象高。 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux/Unix 等一般采用面向过程开发。但是，面向过程没有面向对象易维护、易复用、易扩展。
@@ -24,7 +24,7 @@ Java 虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM 有针对不�
 在 Java 中，JVM 可以理解的代码就叫做字节码（即扩展名为 .class 的文件），它不面向任何特定的处理器，只面向虚拟机。Java 语言通过字节码的方式，在一定程度上解决了传统解释型语言执行效率低的问题，同时又保留了解释型语言可移植的特点。所以 Java 程序运行时比较高效，而且，由于字节码并不针对一种特定的机器，因此，Java 程序无须重新编译便可在多种不同操作系统的计算机上运行。
 
 ### Java 程序从源代码到运行一般有下面 3 步：
-![图片.png](https://upload-images.jianshu.io/upload_images/12553249-aaefdda6c949490f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/java-base-1.png)
 我们需要格外注意的是 .class->机器码 这一步。在这一步 JVM 类加载器首先加载字节码文件，然后通过解释器逐行解释执行，这种方式的执行速度会相对比较慢。而且，有些方法和代码块是经常需要被调用的(也就是所谓的热点代码)，所以后面引进了 JIT 编译器，而 JIT 属于运行时编译。当 JIT 编译器完成第一次编译后，其会将字节码对应的机器码保存下来，下次可以直接使用。而我们知道，机器码的运行效率肯定是高于 Java 解释器的。这也解释了我们为什么经常会说 Java 是编译与解释共存的语言。
 
 HotSpot 采用了惰性评估(Lazy Evaluation)的做法，根据二八定律，消耗大部分系统资源的只有那一小部分的代码（热点代码），而这也就是 JIT 所需要编译的部分。JVM 会根据代码每次被执行的情况收集信息并相应地做出一些优化，因此执行的次数越多，它的速度就越快。JDK 9 引入了一种新的编译模式 AOT(Ahead of Time Compilation)，它是直接将字节码编译成机器码，这样就避免了 JIT 预热等各方面的开销。JDK 支持分层编译和 AOT 协作使用。但是 ，AOT 编译器的编译质量是肯定比不上 JIT 编译器的。
@@ -71,7 +71,7 @@ Constructor 不能被 override（重写）,但是可以 overload（重载）,所
 发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同。
 
 下面是《Java 核心技术》对重载这个概念的介绍：
-![图片.png](https://upload-images.jianshu.io/upload_images/12553249-ecf689bcdd37b18c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/java-base-2.png)
 ### 重写
 重写是子类对父类的允许访问的方法的实现过程进行重新编写,发生在子类中，方法名、参数列表必须相同，返回值范围小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类。另外，如果父类方法访问修饰符为 private 则子类就不能重写该方法。也就是说方法提供的行为改变，而方法的外貌并没有改变。
 

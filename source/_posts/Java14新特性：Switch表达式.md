@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 >Java 14正式发布switch表达式特性。在之前的两个 Java 版本Java12，Java13，switch特性只是预览版。
 新的switch表达式有助于避免一些bug，因为它的表达和组合方式更容易编写。

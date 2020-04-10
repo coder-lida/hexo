@@ -6,10 +6,8 @@ categories:
   - Dev
   - Java
 date: 2019-09-12 09:54:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%281%29.jpeg)
 <!-- more -->
 
 ## 以流的方式下载

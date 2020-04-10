@@ -5,11 +5,9 @@ categories:
   - Dev
   - Java
 date: 2020-02-26 11:29:00
-cover: true
 
 ---
 
-![](http://q6thylgbl.bkt.clouddn.com/warhorsejpeg.jpeg)
 <!-- more -->
 ## 引言
 在 Java 8 以前，若我们想要把某些功能传递给某些方法，总要去写匿名类。以前注册事件监听器的写法与下面的示例代码就很像：

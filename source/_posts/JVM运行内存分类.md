@@ -5,11 +5,9 @@ categories:
   - Dev
   - Java
 date: 2020-03-04 20:58:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2814%29.jpeg)
 <!-- more -->
 
 ![图片.png](http://q6pznk9ej.bkt.clouddn.com/jvm.png)

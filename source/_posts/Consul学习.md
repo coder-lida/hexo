@@ -6,11 +6,9 @@ categories:
   - Dev
   - Frame
 date: 2019-11-19 08:43:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/bg1.jpeg)
 <!-- more -->
 
 服务注册与服务发现是在分布式服务架构中常常会涉及到的东西，业界常用的服务注册与服务发现工具有 [ZooKeeper](https://zookeeper.apache.org/)、[etcd](https://coreos.com/etcd/)、[Consul](https://www.consul.io/) 和 [Eureka](https://github.com/Netflix/eureka)。Consul 的主要功能有服务发现、健康检查、KV存储、安全服务沟通和多数据中心。Consul 与其他几个工具的区别可以在这里查看 [Consul vs. Other Software](https://www.consul.io/intro/vs/index.html)。

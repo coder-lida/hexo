@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/java1.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 ## 21.静态方法和实例方法有何不同
 * 在外部调用静态方法时，可以使用"类名.方法名"的方式，也可以使用"对象名.方法名"的方式。而实例方法只有后面这种方式。也就是说，调用静态方法可以无需创建对象。
@@ -84,9 +84,9 @@ hashCode() 的作用是获取哈希码，也称为散列码；它实际上是返
 
 ## 27.线程有哪些基本状态?
 Java 线程在运行的生命周期中的指定时刻只可能处于下面 6 种不同状态的其中一个状态（图源《Java 并发编程艺术》4.1.4 节）。
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/threadstate.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/java-base-3.png)
 线程在生命周期中并不是固定处于某一个状态而是随着代码的执行在不同状态之间切换。Java 线程状态变迁如下图所示（图源《Java 并发编程艺术》4.1.4 节）：
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/threadstatus.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/java-base-4.png)
 
 由上图可以看出：
 
@@ -94,7 +94,7 @@ Java 线程在运行的生命周期中的指定时刻只可能处于下面 6 种
 
 > 操作系统隐藏 Java 虚拟机（JVM）中的 READY 和 RUNNING 状态，它只能看到 RUNNABLE 状态（图源：[HowToDoInJava](https://howtodoinjava.com/)：[Java Thread Life Cycle and Thread States](https://howtodoinjava.com/java/multi-threading/java-thread-life-cycle-and-thread-states/)），所以 Java 系统一般将这两个状态统称为 **RUNNABLE（运行中）** 状态 。
 
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/runnable.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/java-base-5.png)
 
 当线程执行 wait()方法之后，线程进入 WAITING（等待）状态。进入等待状态的线程需要依靠其他线程的通知才能够返回到运行状态，而 TIME_WAITING(超时等待) 状态相当于在等待状态的基础上增加了超时限制，比如通过 sleep（long millis）方法或 wait（long millis）方法可以将 Java 线程置于 TIMED WAITING 状态。当超时时间到达后 Java 线程将会返回到 RUNNABLE 状态。当线程调用同步方法时，在没有获取到锁的情况下，线程将会进入到 BLOCKED（阻塞） 状态。线程在执行 Runnable 的run()方法之后将会进入到 TERMINATED（终止） 状态。
 
@@ -106,8 +106,9 @@ final 关键字主要用在三个地方：变量、方法、类。
 * 使用 final 方法的原因有两个。第一个原因是把方法锁定，以防任何继承类修改它的含义；第二个原因是效率。在早期的 Java 实现版本中，会将 final 方法转为内嵌调用。但是如果方法过于庞大，可能看不到内嵌调用带来的任何性能提升（现在的 Java 版本已经不需要使用 final 方法进行这些优化了）。类中所有的 private 方法都隐式地指定为 final。
 
 ## 29.Java 中的异常处理
+
 ### Java 异常类层次结构图
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/exception.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/java-base-6.png)
 在 Java 中，所有的异常都有一个共同的祖先 java.lang 包中的 Throwable 类。Throwable： 有两个重要的子类：Exception（异常） 和 Error（错误） ，二者都是 Java 异常处理的重要子类，各自都包含大量子类。
 
 Error（错误）:是程序无法处理的错误，表示运行应用程序中较严重问题。大多数错误与代码编写者执行的操作无关，而表示代码运行时 JVM（Java 虚拟机）出现的问题。例如，Java 虚拟机运行错误（Virtual MachineError），当 JVM 不再有继续执行操作所需的内存资源时，将出现 OutOfMemoryError。这些异常发生时，Java 虚拟机（JVM）一般会选择线程终止。

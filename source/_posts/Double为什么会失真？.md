@@ -5,11 +5,9 @@ categories:
   - Dev
   - Java
 date: 2020-01-07 13:43:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/bg2.jpeg)
 <!-- more -->
 ## 前言
 先来看一个double失真的例子

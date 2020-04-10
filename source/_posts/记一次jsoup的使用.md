@@ -5,10 +5,8 @@ categories:
   - Dev
   - Java
 date: 2019-07-06 15:46:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2822%29.jpeg)
 <!-- more -->
 
 Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与jquery选择器的语法非常相似，并且非常灵活容易使用以获得所需的结果。

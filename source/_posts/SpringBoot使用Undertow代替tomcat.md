@@ -8,7 +8,7 @@ date: 2019-08-14 15:56:00
 cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2818%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/springboot.jpg)
 <!-- more -->
 
 >Undertow 是基于java nio的web服务器，应用比较广泛，内置提供的PathResourceManager，可以用来直接访问文件系统；如果你有文件需要对外提供访问，除了ftp,nginx等，undertow 也是一个不错的选择，作为java开发，服务搭建非常简便

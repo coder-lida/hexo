@@ -8,7 +8,7 @@ date: 2019-07-27 09:45:00
 cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2817%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/springboot.jpg)
 <!-- more -->
 
 通过逆向工程少写很多代码

@@ -6,10 +6,8 @@ categories:
   - Dev
   - Frame
 date: 2019-11-19 08:35:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2819%29.jpeg)
 <!-- more -->
 
 ## 背景

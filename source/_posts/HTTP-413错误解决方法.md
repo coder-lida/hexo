@@ -5,11 +5,9 @@ categories:
   - Dev
   - Java
 date: 2020-02-27 11:26:00
-cover: true
 
 ---
 
-![](http://q6thylgbl.bkt.clouddn.com/listenjpeg.jpeg)
 <!-- more -->
 这是由于上传文件过大引起的。
 

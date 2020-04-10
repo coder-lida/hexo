@@ -5,11 +5,8 @@ categories:
   - Dev
   - Java
 date: 2020-03-19 15:00:00
-cover: true
 
 ---
-
-![](http://q6pznk9ej.bkt.clouddn.com/car.jpeg)
 <!-- more -->
 **开发环境**：开发环境是程序猿们专门用于开发的服务器，配置可以比较随意， 为了开发调试方便，一般打开全部错误报告。
 

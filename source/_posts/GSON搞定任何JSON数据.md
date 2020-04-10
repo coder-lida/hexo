@@ -6,10 +6,9 @@ categories:
   - Dev
   - Java
 date: 2019-07-26 11:41:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/bg4.jpeg)
+
 <!-- more -->
 
 ## 一、Gson介绍

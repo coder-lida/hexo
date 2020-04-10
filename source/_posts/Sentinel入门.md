@@ -9,7 +9,7 @@ date: 2020-04-01 15:39:00
 cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/sentinel.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/sentinel.png)
 <!-- more -->
 ## 前言
 
@@ -33,10 +33,9 @@ cover: true
 * 完善的 SPI 扩展点：Sentinel 提供简单易用、完善的 SPI 扩展接口。您可以通过实现扩展接口来快速地定制逻辑。例如定制规则管理、适配动态数据源等。
 
 ### Sentinel 的主要特性
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/Sentinel%20%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7.png)
-
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-1.png)
 ### Sentinel 的开源生态
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/Sentinel%20%E7%9A%84%E5%BC%80%E6%BA%90%E7%94%9F%E6%80%81.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-2.png)
 
 ### Sentinel 分为两个部分
 
@@ -424,7 +423,7 @@ public class TestSentinelService {
 ### 4.控制台
 #### 4.1下载
 从 [release 页面](https://github.com/alibaba/Sentinel/releases) 下载截止目前为止最新版本的控制台 jar 包
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-release.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-3.png)
 >注意： 
 启动 Sentinel 控制台需要 JDK 版本为 1.8 及以上版本
   从 Sentinel 1.6.0 起，Sentinel 控制台引入基本的 登录 功能，默认用户名和密码都是 sentinel
@@ -439,9 +438,9 @@ public class TestSentinelService {
 java -jar sentinel-dashboard-1.7.1.jar
 ```
 访问http://localhost:8080
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-login.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-4.png)
 #### 4.3登录
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-console.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-5.png)
 可以看到当前控制台中没有任何的应用，因为还没有应用接入。
 
 ### 5.客户端接入
@@ -461,18 +460,18 @@ java -jar sentinel-dashboard-1.7.1.jar
 
 ```
 其中的consoleIp和port对应的就是我们部署的 sentinel dashboard 的ip和port，我这里对应的是 127.0.0.1 和 8080，按照实际情况来配置 dashboard 的ip和port就好了，如下图所示：
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-vm-config.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-6.png)
 
 #### 5.3 启动应用
 启动上边的springboot项目
 
 #### 5.4 测试效果
 本demo中http://localhost:8083/test/getValue_2?key=kobe接口执行多次，会触发限流操作，这时候再去看控制台：
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-sonsole-1.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-7.png)
 
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-console-2.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-8.png)
 
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/sentinel-console-3.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/Sentinel-9.png)
 
 详细说明请参考 [官方 Sentinel Wiki](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Falibaba%2FSentinel%2Fwiki)
 

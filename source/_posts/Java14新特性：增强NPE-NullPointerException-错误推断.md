@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 >改进 NullPointerExceptions，通过准确描述哪些变量为 null 来提高 JVM 生成的异常的可用性。该提案的作者希望为开发人员和支持人员提供有关程序为何异常终止的有用信息，并通过更清楚地将动态异常与静态程序代码相关联来提高对程序的理解。
 

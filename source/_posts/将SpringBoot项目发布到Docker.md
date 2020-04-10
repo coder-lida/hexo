@@ -8,11 +8,9 @@ date: 2020-03-06 19:33:00
 cover: true
 
 ---
-
-![](http://q6pznk9ej.bkt.clouddn.com/fish.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/springboot.jpg)
 <!-- more -->
 ### 1.创建springboot项目
-![](http://q6rnahf7l.bkt.clouddn.com/springboot.png)
 
 ```
 package com.test.demo.controller;

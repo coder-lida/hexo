@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/fish.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/mybatis.png)
 <!-- more -->
 ## if标签语法
 ```

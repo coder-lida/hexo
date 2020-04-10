@@ -9,14 +9,14 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%289%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/tomcat.jepg)
 <!-- more -->
 >TTPS 是安全套接字层超文本传输协议，在http 的基础上加入了 SSL协议，需要使用证书来校验身份。 HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。其默认端口为：443。越来越多的网站使用了https，这里简介其相关配置。
 ## 一、使用jdk创建证书
 ### 1、keytool的概念
 　keytool 是个密钥和证书管理工具。它使用户能够管理自己的公钥/私钥对及相关证书，用于（通过数字签名）自我认证（用户向别的用户/服务认证自己）或数据完整性以及认证服务。在JDK 1.4以后的版本中都包含了这一工具，它的位置为`%JAVA_HOME%\bin\keytool.exe`，如下图所示：
  
-![keytool.png](http://q6rnahf7l.bkt.clouddn.com/keytool.png)
+![keytool.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/tomcat-1.png)
 
 ### 2、keytool的用法
 这里在安装有 JDK 环境的情况下进行，利用 keytool 工具生成 tomcat 证书，可使用 --help 命令查看相关残数据说明，具体如下：
@@ -114,7 +114,7 @@ CN=local.test.com, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown是否
         (如果和密钥库口令相同, 按回车):
 ```
 
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/tomcat.png)
+![keytool.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/tomcat-2.png)
 
 这里随便写了个域名，是一个不存在的二级域名，为了能够访问，需要在 C:\Windows\System32\drivers\etc 路径下的 hosts 文件添加：
 ```

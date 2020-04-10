@@ -5,11 +5,9 @@ categories:
   - Dev
   - Front
 date: 2020-03-05 20:22:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/sleep.png)
 <!-- more -->
 >最近需要做一个省市联动的地图，来随时观看各地区的用户数量。
 
@@ -217,9 +215,9 @@ cover: true
 ```
 
 效果图：
-![](http://q6rnahf7l.bkt.clouddn.com/china.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/echart-1.png)
 
-![](http://q6rnahf7l.bkt.clouddn.com/hebei.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/echart-2.png)
 
 源码地址：https://github.com/coder-lida/chinamap.git
 

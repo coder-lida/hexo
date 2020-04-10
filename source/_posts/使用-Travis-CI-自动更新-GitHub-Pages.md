@@ -7,7 +7,7 @@ categories:
 date: 2020-01-15 11:26:00
 cover: true
 ---
-![图片.png](http://q6pznk9ej.bkt.clouddn.com/img%20%282%29.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/hexo-1.png)
 <!-- more -->
 ## 前言
 Github Pages 不能运行动态程序，只能输出一些静态内容。因此 Github Pages 非常适合用于前端项目的展示。可用于存放项目介绍、项目文档或者个人博客。本文介绍了怎么用 Travis CI 自动化部署 Github Pages。

@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/git.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.jpg)
 <!-- more -->
 | 特性| gitlab| gitblit|gitbucket|gogs|gitolite|
 |-----|-----|-----|-----|-----|-----|

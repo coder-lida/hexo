@@ -6,11 +6,9 @@ categories:
   - Dev
   - Java
 date: 2019-12-21 08:43:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2811%29.jpeg)
 <!-- more -->
 
 

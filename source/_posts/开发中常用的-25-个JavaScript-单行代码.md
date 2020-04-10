@@ -5,11 +5,9 @@ categories:
   - Dev
   - Front
 date: 2019-07-26 11:34:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2824%29.jpeg)
 <!-- more -->
 
 ### 1.强制布尔值

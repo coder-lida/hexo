@@ -16,7 +16,7 @@ CDN的全称是Content Delivery Network，即内容分发网络。CDN是构建�
 放在Github的资源在国内加载速度比较慢，因此需要使用CDN加速来优化网站打开速度，jsDelivr + Github便是免费且好用的CDN，非常适合博客网站使用。
 
 ### 1、新建Github仓库 
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/cdn.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/cdn-1.png)
 
 ### 2、克隆Github仓库到本地 
 在本地目录右键 Git Bash Here，执行以下命令：
@@ -33,11 +33,11 @@ git push -u origin master
 ```
 ### 4、发布仓库 
 点击release发布
-![release.png](http://q6rnahf7l.bkt.clouddn.com/releases.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/cdn-2.png)
 
 自定义发布版本号
 
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/releases%26tags.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/cdn-3.png)
 
 ### 5、通过jsDelivr引用资源 
 使用方法：[https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径](https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径)

@@ -8,8 +8,7 @@ date: 2019-08-15 11:08:00
 cover: true
 
 ---
-
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%282%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/spring.jpg)
 <!-- more -->
 
 SpringMVC请求参数获取的几种方法

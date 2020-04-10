@@ -5,10 +5,9 @@ categories:
   - Dev
   - Java
 date: 2019-09-16 13:52:00
-cover: true
 
 ---
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%281%29.png)
+
 <!-- more -->
 
 ## 继承Thread类

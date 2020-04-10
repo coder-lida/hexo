@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/fish.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.jpg)
 <!-- more -->
 ## 下载
 如果未安装wget,则先安装wget
@@ -199,7 +199,7 @@ service gitblit  start
 ## 访问
 用户名：admin
 密码：admin
-![图片.png](http://q6rnahf7l.bkt.clouddn.com/gitblit-linux.png)
+![图片.png](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/assert/gitblit-6.png)
 
 ## 额外依赖库
 如果需要

@@ -6,11 +6,9 @@ categories:
   - Dev
   - Linux
 date: 2020-03-01 17:51:00
-cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/bg0.jpeg)
 <!-- more -->
 ## 1、Xshell 5
 为了方便管理操作服务器，这里采用 `xshell 5` 来连接服务器，使用ssh证书，端口号 22，对于购买的与主机需要开放相应的端口。

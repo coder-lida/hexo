@@ -10,7 +10,7 @@ cover: true
 
 ---
 
-![](http://q6pznk9ej.bkt.clouddn.com/img%20%2816%29.jpeg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/springboot.jpg)
 <!-- more -->
 
 ## jar包(官方推荐)
