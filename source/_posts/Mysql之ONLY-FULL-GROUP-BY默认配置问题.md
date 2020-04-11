@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/mysql.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/sql.png)
 <!-- more -->
 ## 错误
 ```

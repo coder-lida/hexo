@@ -8,7 +8,7 @@ date: 2020-04-10 13:55:00
 cover: true
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/mysql.png)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/sql.png)
 <!-- more -->
 
 ## InnoDB引擎表的特点
