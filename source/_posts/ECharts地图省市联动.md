@@ -5,9 +5,11 @@ categories:
   - Dev
   - Front
 date: 2020-03-05 20:22:00
+cover: true
 
 ---
 
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/chart.png)
 <!-- more -->
 >最近需要做一个省市联动的地图，来随时观看各地区的用户数量。
 

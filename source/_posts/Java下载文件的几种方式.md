@@ -10,7 +10,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.png)
 <!-- more -->
 
 ## 以流的方式下载

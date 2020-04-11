@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/tomcat.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/tomcat.png)
 <!-- more -->
 ### 描述
 使用springmvc做了一个文件上传的功能，上传到nginx目录下的一个文件夹，但是通过目录访问的时候却报403的错误

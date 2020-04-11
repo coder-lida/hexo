@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.png)
 <!-- more -->
 java1之前写字符串拼接
 ```

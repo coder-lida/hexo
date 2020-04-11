@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.png)
 <!-- more -->
 ## 11.自动装箱与拆箱
 * 装箱：将基本类型用它们对应的引用类型包装起来；

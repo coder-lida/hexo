@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.png)
 <!-- more -->
 ## Java中对象的创建
 * 使用new操作符创建一个对象

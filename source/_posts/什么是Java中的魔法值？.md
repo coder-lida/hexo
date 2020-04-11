@@ -5,8 +5,10 @@ categories:
   - Dev
   - Java
 date: 2020-01-20 08:40:00
+cover: true
 
 ---
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.png)
 <!-- more -->
 
 >使用IDEA时，启用了阿里的代码规范检查，其中就有一项提示是不允许任何魔法值出现在代码里，于是出于好奇就了解一下到底啥时魔法值。

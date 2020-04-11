@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.png)
 <!-- more -->
 >Java中instanceof是用来判断对象的类型是否是目标类型。如果是返回true，不是返回false。
 
