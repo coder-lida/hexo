@@ -5,9 +5,11 @@ categories:
   - Dev
   - Java
 date: 2020-03-07 09:08:00
+cover: true
 
 ---
 
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/jvm.jpg)
 <!-- more -->
 
 >Java 虚拟机中的类加载即从 class 文件到内存中的类，按先后顺序需要经过加载、链接以及初始化三大步骤。

@@ -5,9 +5,11 @@ categories:
   - Dev
   - Java
 date: 2020-01-13 07:56:00
+cover: true
 
 ---
 
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 ## Java中对象的创建
 * 使用new操作符创建一个对象

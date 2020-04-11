@@ -6,9 +6,11 @@ categories:
   - Dev
   - Java
 date: 2019-07-26 11:41:00
+cover: true
 
 ---
 
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/Jennifer-2.png)
 <!-- more -->
 
 ## 一、Gson介绍

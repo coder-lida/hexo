@@ -5,9 +5,11 @@ categories:
   - Dev
   - Java
 date: 2019-09-16 13:52:00
+cover: true
 
 ---
 
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 
 ## 继承Thread类

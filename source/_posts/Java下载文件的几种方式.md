@@ -6,8 +6,11 @@ categories:
   - Dev
   - Java
 date: 2019-09-12 09:54:00
+cover: true
 
 ---
+
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/java.jpg)
 <!-- more -->
 
 ## 以流的方式下载

@@ -5,9 +5,11 @@ categories:
   - Dev
   - Java
 date: 2020-01-07 13:43:00
+cover: true
 
 ---
 
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/Jennifer-1.png)
 <!-- more -->
 ## 前言
 先来看一个double失真的例子
