@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.png)
 <!-- more -->
 ## 下载
 如果未安装wget,则先安装wget

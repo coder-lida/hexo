@@ -9,7 +9,7 @@ cover: true
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.jpg)
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/git.png)
 <!-- more -->
 ## 服务器搭建
 
