@@ -6,7 +6,10 @@ categories:
   - Dev
   - Java
 date: 2020-04-20 08:06:00
+cover: true
+
 ---
+![](https://cdn.jsdelivr.net/gh/coder-lida/CDN/img/bingfa.png)
 <!-- more -->
 ## CAS 是什么
 CAS 的全称 Compare-And-Swap，它是一条 CPU 并发。
